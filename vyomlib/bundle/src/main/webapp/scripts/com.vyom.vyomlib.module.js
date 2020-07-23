@@ -19,13 +19,18 @@
         'com.vyom.vyomlib.view-components.vc17',
         'com.vyom.vyomlib.view-components.topheader', 
         'com.vyom.vyomlib.view-components.vc19', // Custom Icon Block
-        'com.vyom.vyomlib.view-components.kanban2',
+        // 'com.vyom.vyomlib.view-components.kanban2',
+        'com.vyom.vyomlib.view-components.kanbanadv',
         'com.vyom.vyomlib.view-components.simple-widget',
         'com.vyom.vyomlib.view-components.landing-console',
         'com.vyom.vyomlib.view-components.registration',
         'com.vyom.vyomlib.view-components.test-vc1',
         'com.vyom.vyomlib.view-components.custom-blog',
-        'com.vyom.vyomlib.view-components.menubar'
+        'com.vyom.vyomlib.view-components.menubaradv',
+        'com.vyom.vyomlib.view-components.mypageadv',
+        'com.vyom.vyomlib.view-components.chatbot'
+
+        
 
 
                     
