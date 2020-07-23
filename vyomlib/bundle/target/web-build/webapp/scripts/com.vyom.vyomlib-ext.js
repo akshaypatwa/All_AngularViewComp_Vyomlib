@@ -19,7 +19,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
 
 
   $templateCache.put('scripts/view-components/chatbot/com-vyom-vyomlib-chatbot.directive.html',
-    "<!DOCTYPE html><html><head><meta charset=\"ISO-8859-1\"><title>Vyom Chatbot</title></head><body><!-- <script id=\"rx-view-loader-script\" src=\"view-loader.js\"></script> --><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script><script id=\"rx-view-loader-script\" src=\"https://vyom-platform.trybmc.com/innovationsuite/view-loader.js\"></script><button class=\"rx-view-loader-button\" data-bot-id=\"IDGADG1AANVNNAPS90V8PRLVOBB9GO\"></button><!--  <button class=\"rx-view-loader-button\" data-rsso-server=\"https://vyom-rsso2.trybmc.com\"></button>\r" +
+    "<!DOCTYPE html><html><head><meta charset=\"ISO-8859-1\"><title>Vyom Chatbot</title></head><body><!-- <script id=\"rx-view-loader-script\" src=\"view-loader.js\"></script> --><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script><!-- <script id=\"rx-view-loader-script\" src=\"https://vyom-platform.trybmc.com/innovationsuite/view-loader.js\"></script> --> <button class=\"rx-view-loader-button\" data-bot-id=\"IDGADG1AANVNNAPS90V8PRLVOBB9GO\"></button><!--  <button class=\"rx-view-loader-button\" data-rsso-server=\"https://vyom-rsso2.trybmc.com\"></button>\r" +
     "\n" +
     " --><script type=\"text/javascript\">rxViewLoader.onRequestJwt(function () {\r" +
     "\n" +
@@ -872,7 +872,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
 
 
   $templateCache.put('scripts/view-components/kanbanadv/com-vyom-vyomlib-kanbanadv-design.directive.html',
-    "<h4>Kanbanadv</h4>"
+    "<img src=\"/com.vyom.vyomlib/resources/kanban1/dist/kanbanimage3.png\" width=\"1002\" height=\"420\">"
   );
 
 
@@ -955,7 +955,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "    position: relative;\r" +
     "\n" +
-    "    top: -7px;\r" +
+    "    top: -12px;\r" +
     "\n" +
     "    left: -5px;\r" +
     "\n" +
@@ -1289,57 +1289,61 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "        var toDoButton = document.getElementById(\"addToDo\");\r" +
+    "        // This function is used if you want to create a dummy bord element in UI\r" +
     "\n" +
-    "        toDoButton.addEventListener(\"click\", function () {\r" +
+    "        // var toDoButton = document.getElementById(\"addToDo\");\r" +
+    "\n" +
+    "        // toDoButton.addEventListener(\"click\", function () {\r" +
     "\n" +
     "\r" +
     "\n" +
-    "          KanbanTest.addElement(\"_todo\", {\r" +
+    "\r" +
     "\n" +
-    "            title: `<div class=\"course\">\r" +
+    "        //   KanbanTest.addElement(\"_todo\", {\r" +
     "\n" +
-    "                            <div class=\"course-preview item_handle drag_handler info\"></div>\r" +
+    "        //     title: `<div class=\"course\">\r" +
     "\n" +
-    "                            <div class=\"course-info\">\r" +
+    "        //                     <div class=\"course-preview item_handle drag_handler info\"></div>\r" +
     "\n" +
-    "                              <div class=\"fontsize\">Case ID: INC2332\r" +
+    "        //                     <div class=\"course-info\">\r" +
     "\n" +
-    "                                <div style=\"float:right;\">\r" +
+    "        //                       <div class=\"fontsize\">Case ID: INC2332\r" +
     "\n" +
-    "                                <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "        //                         <div style=\"float:right;\">\r" +
     "\n" +
-    "                              </div>  \r" +
+    "        //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
     "\n" +
-    "                              </div>\r" +
+    "        //                       </div>  \r" +
     "\n" +
-    "                              <div class=\"header\">Summary</div>\r" +
+    "        //                       </div>\r" +
     "\n" +
-    "                              <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "        //                       <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "        //                       <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
     "\n" +
     "                              \r" +
     "\n" +
-    "                                <div class=\"progress\">\r" +
+    "        //                         <div class=\"progress\">\r" +
     "\n" +
-    "                                  <div class=\"progress-bar\" style=\"width:20%; background-color:#2a265f;\"></div>\r" +
+    "        //                           <div class=\"progress-bar\" style=\"width:20%; background-color:#2a265f;\"></div>\r" +
     "\n" +
-    "                                </div>\r" +
+    "        //                         </div>\r" +
     "\n" +
-    "                                <span style=\"font-size: 11px;font-style: italic;\">New</span>\r" +
+    "        //                         <span style=\"font-size: 11px;font-style: italic;\">New</span>\r" +
     "\n" +
-    "                              <div> \r" +
+    "        //                       <div> \r" +
     "\n" +
-    "                                <button class=\"btn1\" onClick=\"CreateTicket123(this)\">View</button>\r" +
+    "        //                         <button class=\"btn1\" onClick=\"CreateTicket123(this)\">View</button>\r" +
     "\n" +
-    "                              </div>\r" +
+    "        //                       </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "        //                       </div>\r" +
     "\n" +
-    "                          </div>`\r" +
+    "        //                   </div>`\r" +
     "\n" +
-    "          });\r" +
+    "        //   });\r" +
     "\n" +
-    "        });\r" +
+    "        // });\r" +
     "\n" +
     "\r" +
     "\n" +
@@ -1359,19 +1363,11 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "            const element = data;\r" +
     "\n" +
-    "            // console.log(element[index][1], element[index][8]);\r" +
+    " \r" +
     "\n" +
-    "            // console.log(\"t f\" + Priority !== Critical);\r" +
+    "            const value = element[index][priority];\r" +
     "\n" +
-    "            // const c = \"t\"\r" +
-    "\n" +
-    "            // const value = element[index][Priority];\r" +
-    "\n" +
-    "            // console.log(value);\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "\r" +
+    "          \r" +
     "\n" +
     "            KanbanTest.addElement(\"_todo\", {\r" +
     "\n" +
@@ -1407,7 +1403,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                              <div> \r" +
     "\n" +
-    "                                <div class=\"critical\">\r" +
+    "                                <div class=\"critical priority\">\r" +
     "\n" +
     "                                  <i class=\"fab fa-gripfire\"></i>\r" +
     "\n" +
@@ -1449,25 +1445,23 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "            // if (value != \"Critical\") {\r" +
-    "\n" +
-    "            //   document.getElementById(\"c\").className = 'ng-hide';\r" +
-    "\n" +
-    "              // const childNodes = document.getElementById(\"c\").getElementsByTagName('*');\r" +
+    "\r" +
     "\n" +
     "\r" +
     "\n" +
-    "              // for (var node of childNodes) {\r" +
+    "             if (value != \"Critical\") {\r" +
     "\n" +
-    "              //   console.log(node);\r" +
+    "              const elementArray = document.getElementsByClassName('priority');\r" +
     "\n" +
-    "              //   node.disabled = true;\r" +
+    "              var p = elementArray[elementArray.length - 1];\r" +
     "\n" +
-    "              // }\r" +
+    "              p.classList.add(\"ng-hide\");\r" +
+    "\n" +
+    "            }\r" +
     "\n" +
     "\r" +
     "\n" +
-    "            // }\r" +
+    "\r" +
     "\n" +
     "          }\r" +
     "\n" +
@@ -1475,7 +1469,31 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "        var search = document.getElementById(\"searchTicket\");\r" +
+    "        // var searchtest = document.getElementById(\"testcase\").onclick=function()\r" +
+    "\n" +
+    "        // {\r" +
+    "\n" +
+    "        //   console.log(\"onclick testcase called\")\r" +
+    "\n" +
+    "        // }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        var search = document.getElementById(\"searchCase\");\r" +
+    "\n" +
+    "        search.onclick = function()\r" +
+    "\n" +
+    "        {\r" +
+    "\n" +
+    "          console.log(\"innerfunction called\");\r" +
+    "\n" +
+    "          console.log(search);\r" +
+    "\n" +
+    "        console.log(\"searchbuttoncalled\");\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "        \r" +
     "\n" +
     "        search.addEventListener(\"click\", function () {\r" +
     "\n" +
@@ -1631,14 +1649,14 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
 
 
   $templateCache.put('scripts/view-components/menubaradv/com-vyom-vyomlib-menubaradv-design.directive.html',
-    "<h1>Menubaradv</h1>"
+    "<img src=\"/com.vyom.vyomlib/resources/kanban1/dist/menubarimage.png\" width=\"1002\" height=\"38\">"
   );
 
 
   $templateCache.put('scripts/view-components/menubaradv/com-vyom-vyomlib-menubaradv.directive.html',
     "<html><head><!-- <link href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\"> --><!-- <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> --><!-- <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" type=\"text/css\"\r" +
     "\n" +
-    "        rel=\"stylesheet\" /> --><script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script><!-- <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script> --><script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css\"><!-- <link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/menubar/menu2.css\">\" --><style>.modal {\r" +
+    "        rel=\"stylesheet\" /> --><!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script> --><!-- <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script> --><script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css\"><!-- <link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/menubar/menu2.css\">\" --><style>.modal {\r" +
     "\n" +
     "            display: none;\r" +
     "\n" +
@@ -1728,7 +1746,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                color: #2a265f;\r" +
     "\n" +
-    "                font-weight: bold\">My Application Dashboard</a></div><div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\"><ul class=\"nav navbar-nav\"><li class=\"active\"><a href=\"#\">All Cases <span class=\"sr-only\">(current)</span></a></li></ul><form class=\"navbar-form navbar-left\"><div class=\"form-group\"><input type=\"text\" class=\"form-control\" placeholder=\"INC Number\" id=\"number\"></div><button type=\"submit\" id=\"searchTicket\" class=\"btn btn-default\">Submit</button></form><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"#\"><i class=\"fa fa-fire\"><span class=\"badge badge-danger\">11</span> </i>My Activity</a></li><li><!-- <i class=\"fa fa-user-circle-o\"></i> --> <button id=\"myBtn\" class=\"btn btn-success\" style=\"margin-top: 20px\">Quick Case</button></li></ul></div><!-- /.navbar-collapse --><!-- new ticket modal --><div id=\"myModal\" class=\"modal\"><!-- Modal content --><div class=\"modal-contentCase\"><div class=\"modal-header\"><h5 class=\"modal-title\">Quick Case</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\" style=\"margin:  -3rem 0 -2rem -2rem\"><span aria-hidden=\"true\">×</span></button></div><div class=\"modal-body p-4\" id=\"result\"><div id=\"myForm1\"><div class=\"form-container\"><label><b>Requestor</b></label><input type=\"text\" id=\"searchTxt\" placeholder=\"Requestor\" name=\"email1\" required><label><b>Summary</b></label><input type=\"text\" placeholder=\"Enter Summary\" name=\"psw1\" required></div></div></div><div class=\"modal-footer\"><button class=\"btn btn-success\" id=\"CreateCase\">Create Quick Case</button></div></div></div><!-- modal end --></div><!-- /container-fluid --></nav></div><script>// $('#myModal').removeClass('modal fade in');\r" +
+    "                font-weight: bold\">My Application Dashboard</a></div><div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\"><ul class=\"nav navbar-nav\"><li class=\"active\"><a href=\"#\">All Cases <span class=\"sr-only\">(current)</span></a></li></ul><form class=\"navbar-form navbar-left\"><div class=\"form-group\"><input type=\"text\" class=\"form-control\" placeholder=\"INC Number\" id=\"number\"></div><button type=\"submit\" id=\"searchCase\" class=\"btn btn-default\">Submit</button></form><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"#\"><i class=\"fa fa-fire\"><span class=\"badge badge-danger\">11</span> </i>My Activity</a></li><li><!-- <i class=\"fa fa-user-circle-o\"></i> --> <button id=\"myBtn\" class=\"btn btn-success\" style=\"margin-top: 20px\">Quick Case</button></li></ul></div><!-- /.navbar-collapse --><!-- new ticket modal --><div id=\"myModal\" class=\"modal\"><!-- Modal content --><div class=\"modal-contentCase\"><div class=\"modal-header\"><h5 class=\"modal-title\">Quick Case</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\" style=\"margin:  -3rem 0 -2rem -2rem\"><span aria-hidden=\"true\">×</span></button></div><div class=\"modal-body p-4\" id=\"result\"><div id=\"myForm1\"><div class=\"form-container\"><label><b>Requestor</b></label><input type=\"text\" id=\"searchTxt\" placeholder=\"Requestor\" name=\"email1\" required><label><b>Summary</b></label><input type=\"text\" placeholder=\"Enter Summary\" name=\"psw1\" required></div></div></div><div class=\"modal-footer\"><button class=\"btn btn-success\" id=\"CreateCase\">Create Quick Case</button></div></div></div><!-- modal end --></div><!-- /container-fluid --></nav></div><script>// $('#myModal').removeClass('modal fade in');\r" +
     "\n" +
     "        // Get the modal\r" +
     "\n" +

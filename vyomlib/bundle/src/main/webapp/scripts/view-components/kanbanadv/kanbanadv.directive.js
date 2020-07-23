@@ -13,7 +13,7 @@
                 },
 
                 link: function ($scope) {
-                    var _config, ID, summary;
+                    var _config, ID, summary, priority;
 
                     function init() {
                         _config = $scope.rxConfiguration.propertiesByName;
@@ -22,6 +22,8 @@
                         $scope.cfg.recordDefinitionName = _config.recordDefinitionName;
                         $scope.cfg.ID = _config.ID;
                         $scope.cfg.summary = _config.summary;
+                        $scope.cfg.priority = _config.priority;
+                        
 
                         $scope.myData = [];
                         window.data = [];
@@ -34,6 +36,7 @@
 
                         window.ID = $scope.cfg.ID;
                         window.summary = $scope.cfg.summary;
+                        window.priority = $scope.cfg.priority;
 
                     }
 

@@ -7,7 +7,7 @@
                 {
                     name: 'menubaradv',
                     group: 'vyomlib',
-                    icon: 'layout_preview',
+                    icon: 'angle_up_square',
                     type: 'com-vyom-vyomlib-menubaradv',
                     designType: 'com-vyom-vyomlib-menubaradv-design',
                     bundleId: 'com.vyom.vyomlib',

@@ -6,7 +6,7 @@
       var starRatingDescriptor = {
         name: 'KanbanAdv',
         group: 'vyomlib',
-        icon: 'at',
+        icon: 'table_2',
         type: 'com-vyom-vyomlib-kanbanadv',  // the name of runtime directive
         designType: 'com-vyom-vyomlib-kanbanadv-design', // register design directive
         designManagerService: 'comVyomVyomlibKanbanadvDesign',
@@ -33,6 +33,12 @@
             isRequired: false,
             type: 'string'
 
+          },
+          {
+            name: 'priority',
+            type: 'string',
+            isConfig: true,     // Input parameter
+            isRequired: false,  // required
           },
           {
             name: 'dropcardworking_GUID',

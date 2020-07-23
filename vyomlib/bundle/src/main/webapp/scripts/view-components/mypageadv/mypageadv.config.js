@@ -7,7 +7,7 @@
                 {
                     name: 'mypageadv',
                     group: 'vyomlib',
-                    icon: 'layout_preview',
+                    icon: 'angle_up_square',
                     type: 'com-vyom-vyomlib-mypageadv',
                     designType: 'com-vyom-vyomlib-mypageadv-design',
                     bundleId: 'com.vyom.vyomlib',

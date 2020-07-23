@@ -52,6 +52,12 @@
                                 group: 'general',
                                 index: 2
                             },
+                            priority: {
+                                label: 'priority',
+                                type: 'rx-inspector-expression-node-field',
+                                group: 'general',
+                                index: 2
+                            },
                             dropcardworking_GUID: {
                                 label: 'dropcardworking_GUID',
                                 type: 'rx-inspector-expression-node-field',

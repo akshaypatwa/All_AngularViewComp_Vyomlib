@@ -5,7 +5,7 @@
         .directive('comVyomVyomlibKanbanadvDesign', function () {
             return {
                 restrict: 'E',
-                template: '<h1>Kanbanadv</h1>',
+                templateUrl: 'scripts/view-components/kanbanadv/com-vyom-vyomlib-kanbanadv-design.directive.html',
 
                 scope: {
                     rxConfiguration: '='

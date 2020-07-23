@@ -69,7 +69,7 @@
   #myKanban {
     overflow-x: auto;
     position: relative;
-    top: -7px;
+    top: -12px;
     left: -5px;
     padding: 7px 0;
   }
@@ -286,32 +286,34 @@
           ]
         });
 
-        var toDoButton = document.getElementById("addToDo");
-        toDoButton.addEventListener("click", function () {
+        // This function is used if you want to create a dummy bord element in UI
+        // var toDoButton = document.getElementById("addToDo");
+        // toDoButton.addEventListener("click", function () {
 
-          KanbanTest.addElement("_todo", {
-            title: `<div class="course">
-                            <div class="course-preview item_handle drag_handler info"></div>
-                            <div class="course-info">
-                              <div class="fontsize">Case ID: INC2332
-                                <div style="float:right;">
-                                <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
-                              </div>  
-                              </div>
-                              <div class="header">Summary</div>
-                              <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
+
+        //   KanbanTest.addElement("_todo", {
+        //     title: `<div class="course">
+        //                     <div class="course-preview item_handle drag_handler info"></div>
+        //                     <div class="course-info">
+        //                       <div class="fontsize">Case ID: INC2332
+        //                         <div style="float:right;">
+        //                         <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
+        //                       </div>  
+        //                       </div>
+        //                       <div class="header">Summary</div>
+        //                       <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
                               
-                                <div class="progress">
-                                  <div class="progress-bar" style="width:20%; background-color:#2a265f;"></div>
-                                </div>
-                                <span style="font-size: 11px;font-style: italic;">New</span>
-                              <div> 
-                                <button class="btn1" onClick="CreateTicket123(this)">View</button>
-                              </div>
-                              </div>
-                          </div>`
-          });
-        });
+        //                         <div class="progress">
+        //                           <div class="progress-bar" style="width:20%; background-color:#2a265f;"></div>
+        //                         </div>
+        //                         <span style="font-size: 11px;font-style: italic;">New</span>
+        //                       <div> 
+        //                         <button class="btn1" onClick="CreateTicket123(this)">View</button>
+        //                       </div>
+        //                       </div>
+        //                   </div>`
+        //   });
+        // });
 
         function fun(elem) {
           alert("View button clicked  " + elem.id);
@@ -321,13 +323,9 @@
 
           for (let index = 0; index < data.length; index++) {
             const element = data;
-            // console.log(element[index][1], element[index][8]);
-            // console.log("t f" + Priority !== Critical);
-            // const c = "t"
-            // const value = element[index][Priority];
-            // console.log(value);
-
-
+ 
+            const value = element[index][priority];
+          
             KanbanTest.addElement("_todo", {
               title: `<div class="course">
                         <div class="course-preview item_handle drag_handler info"></div>
@@ -345,7 +343,7 @@
                                 </div>
                                 <span style="font-size: 11px;font-style: italic;">New</span>
                               <div> 
-                                <div class="critical">
+                                <div class="critical priority">
                                   <i class="fab fa-gripfire"></i>
                                     Critical
                                 </div>
@@ -366,20 +364,31 @@
              var CreateCase = document.getElementById("CreateCase");
              CreateCase.onclick = function() {CreateTicket()};
 
-            // if (value != "Critical") {
-            //   document.getElementById("c").className = 'ng-hide';
-              // const childNodes = document.getElementById("c").getElementsByTagName('*');
 
-              // for (var node of childNodes) {
-              //   console.log(node);
-              //   node.disabled = true;
-              // }
 
-            // }
+             if (value != "Critical") {
+              const elementArray = document.getElementsByClassName('priority');
+              var p = elementArray[elementArray.length - 1];
+              p.classList.add("ng-hide");
+            }
+
+
           }
         }
 
-        var search = document.getElementById("searchTicket");
+        // var searchtest = document.getElementById("testcase").onclick=function()
+        // {
+        //   console.log("onclick testcase called")
+        // }
+
+        var search = document.getElementById("searchCase");
+        search.onclick = function()
+        {
+          console.log("innerfunction called");
+          console.log(search);
+        console.log("searchbuttoncalled");
+        }
+        
         search.addEventListener("click", function () {
           var input, filter, ul, li, a, i, txtValue;
           input = document.getElementById("number");
