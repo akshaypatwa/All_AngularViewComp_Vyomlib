@@ -164,15 +164,41 @@
           click: function (el) {
             // console.log("Trigger on all items click!");
           },
+          // dropEl: function (el, target, source, sibling) {
+          //   // console.log(target.parentElement.getAttribute('data-id'));
+          //   // console.log(el, target, source, sibling)
+          //   // alert(target.parentElement.getAttribute('data-id'));
+          //   var parentcardid = target.parentElement.getAttribute('data-id');
+          //   if (parentcardid == "_working") {
+          //     window.dropcardworking();
+          //   }
+
+            
+          // },
+
+
+
           dropEl: function (el, target, source, sibling) {
-            // console.log(target.parentElement.getAttribute('data-id'));
-            // console.log(el, target, source, sibling)
-            // alert(target.parentElement.getAttribute('data-id'));
+            console.log(target.parentElement.getAttribute('data-id'));
             var parentcardid = target.parentElement.getAttribute('data-id');
             if (parentcardid == "_working") {
-              window.dropcardworking();
+             window.dropcardworking();
+               }
+
+            if (parentcardid == "_todo") {
+              $(el).find('.progress1').addClass('info').removeClass("progress1");
+            }
+            else if (parentcardid == "_working") {
+              $(el).find('.info').addClass('progress1').removeClass("info");
+              $(el).find('.success').addClass('progress1').removeClass("success");
+            }
+            else if (parentcardid == "_done") {
+              $(el).find('.progress1').addClass('success').removeClass("progress1");
             }
           },
+
+
+
 
           addItemButton: true,
           boards: [
@@ -315,9 +341,7 @@
         //   });
         // });
 
-        function fun(elem) {
-          alert("View button clicked  " + elem.id);
-        }
+  
 
         function def() {
 

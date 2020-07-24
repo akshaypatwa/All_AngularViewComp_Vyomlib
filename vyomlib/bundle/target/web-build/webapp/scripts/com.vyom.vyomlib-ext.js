@@ -1045,23 +1045,75 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "          },\r" +
     "\n" +
+    "          // dropEl: function (el, target, source, sibling) {\r" +
+    "\n" +
+    "          //   // console.log(target.parentElement.getAttribute('data-id'));\r" +
+    "\n" +
+    "          //   // console.log(el, target, source, sibling)\r" +
+    "\n" +
+    "          //   // alert(target.parentElement.getAttribute('data-id'));\r" +
+    "\n" +
+    "          //   var parentcardid = target.parentElement.getAttribute('data-id');\r" +
+    "\n" +
+    "          //   if (parentcardid == \"_working\") {\r" +
+    "\n" +
+    "          //     window.dropcardworking();\r" +
+    "\n" +
+    "          //   }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            \r" +
+    "\n" +
+    "          // },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
     "          dropEl: function (el, target, source, sibling) {\r" +
     "\n" +
-    "            // console.log(target.parentElement.getAttribute('data-id'));\r" +
-    "\n" +
-    "            // console.log(el, target, source, sibling)\r" +
-    "\n" +
-    "            // alert(target.parentElement.getAttribute('data-id'));\r" +
+    "            console.log(target.parentElement.getAttribute('data-id'));\r" +
     "\n" +
     "            var parentcardid = target.parentElement.getAttribute('data-id');\r" +
     "\n" +
     "            if (parentcardid == \"_working\") {\r" +
     "\n" +
-    "              window.dropcardworking();\r" +
+    "             window.dropcardworking();\r" +
+    "\n" +
+    "               }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            if (parentcardid == \"_todo\") {\r" +
+    "\n" +
+    "              $(el).find('.progress1').addClass('info').removeClass(\"progress1\");\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "            else if (parentcardid == \"_working\") {\r" +
+    "\n" +
+    "              $(el).find('.info').addClass('progress1').removeClass(\"info\");\r" +
+    "\n" +
+    "              $(el).find('.success').addClass('progress1').removeClass(\"success\");\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "            else if (parentcardid == \"_done\") {\r" +
+    "\n" +
+    "              $(el).find('.progress1').addClass('success').removeClass(\"progress1\");\r" +
     "\n" +
     "            }\r" +
     "\n" +
     "          },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
     "\n" +
     "\r" +
     "\n" +
