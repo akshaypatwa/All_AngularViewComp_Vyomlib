@@ -182,18 +182,30 @@
             console.log(target.parentElement.getAttribute('data-id'));
             var parentcardid = target.parentElement.getAttribute('data-id');
             if (parentcardid == "_working") {
+
              window.dropcardworking();
                }
 
             if (parentcardid == "_todo") {
               $(el).find('.progress1').addClass('info').removeClass("progress1");
+              $(el).find('.progress-barprogress').addClass('progress-barnew').removeClass('progress-barprogress')
             }
             else if (parentcardid == "_working") {
               $(el).find('.info').addClass('progress1').removeClass("info");
               $(el).find('.success').addClass('progress1').removeClass("success");
+              
+              
+
+              $(el).find('.progress-barnew').addClass('progress-barprogress').removeClass('progress-barnew');
+              $(el).find('.progress-barsuccess').addClass('progress-barprogress').removeClass('progress-barsuccess');
+
+             
+              
             }
             else if (parentcardid == "_done") {
               $(el).find('.progress1').addClass('success').removeClass("progress1");
+              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress')
+              
             }
           },
 
@@ -219,63 +231,63 @@
               title: "In Progress",
               class: "progress1",
               item: [
-                {
-                  title: `<div class="course">
-                            <div class="course-preview item_handle drag_handler progress1"></div>
-                            <div class="course-info">
-                              <div class="fontsize">Case ID: INC2332
-                              <div>
-                                    <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
-                              </div>
-                              </div>
-                              <div class="header">Summary</div>
-                              <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
+            //     {
+            //       title: `<div class="course">
+            //                 <div class="course-preview item_handle drag_handler progress1"></div>
+            //                 <div class="course-info">
+            //                   <div class="fontsize">Case ID: INC2332
+            //                   <div>
+            //                         <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
+            //                   </div>
+            //                   </div>
+            //                   <div class="header">Summary</div>
+            //                   <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
                               
-                                <div class="progress">
-                                  <div class="progress-bar" style="width:70%"></div>
-                                </div>
-                                <span style="font-size: 11px;font-style: italic;">In Progress</span>
-                              <div> 
-                                <div class="critical">
-                                  <i class="fab fa-gripfire"></i>
-                                   Critical
-                                </div>
-                                <div>
-                                   <button class="btn1" id="1" onClick="fun(this)">View</button>
-                                </div>
-                              </div>
-                              </div>
-                          </div>`
-                },
+            //                     <div class="progress">
+            //                       <div class="progress-bar" style="width:70%"></div>
+            //                     </div>
+            //                     <span style="font-size: 11px;font-style: italic;">In Progress</span>
+            //                   <div> 
+            //                     <div class="critical">
+            //                       <i class="fab fa-gripfire"></i>
+            //                        Critical
+            //                     </div>
+            //                     <div>
+            //                        <button class="btn1" id="1" onClick="fun(this)">View</button>
+            //                     </div>
+            //                   </div>
+            //                   </div>
+            //               </div>`
+            //     },
 
-                {
-                  title: `<div class="course">
-                            <div class="course-preview item_handle drag_handler progress1"></div>
-                            <div class="course-info">
-                              <div class="fontsize">Case ID: INC2332
-                                <div>
-                                    <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
-                              </div>  
-                              </div>
-                              <div class="header">Summary</div>
-                              <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
+            //     {
+            //       title: `<div class="course">
+            //                 <div class="course-preview item_handle drag_handler progress1"></div>
+            //                 <div class="course-info">
+            //                   <div class="fontsize">Case ID: INC2332
+            //                     <div>
+            //                         <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
+            //                   </div>  
+            //                   </div>
+            //                   <div class="header">Summary</div>
+            //                   <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
                              
-                                <div class="progress">
-                                  <div class="progress-bar" style="width:70%; "></div>
-                                </div>
-                                <span style="font-size: 11px;font-style: italic;">In Progress</span>
-                              <div> 
-                                <div class="critical">
-                                  <i class="fab fa-gripfire"></i>
-                                  Critical
-                                </div>
-                                <div>
-                                  <button class="btn1" id="1" onClick="fun(this)">View</button>
-                                </div>
-                              </div>
-                              </div>
-                          </div>`
-                }
+            //                     <div class="progress">
+            //                       <div class="progress-bar" style="width:70%; "></div>
+            //                     </div>
+            //                     <span style="font-size: 11px;font-style: italic;">In Progress</span>
+            //                   <div> 
+            //                     <div class="critical">
+            //                       <i class="fab fa-gripfire"></i>
+            //                       Critical
+            //                     </div>
+            //                     <div>
+            //                       <button class="btn1" id="1" onClick="fun(this)">View</button>
+            //                     </div>
+            //                   </div>
+            //                   </div>
+            //               </div>`
+            //     }
               ]
             },
             {
@@ -297,7 +309,7 @@
                               <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
                               
                                 <div class="progress">
-                                  <div class="progress-bar" style="width:100%; background-color:green"></div>
+                                  <div class="progress-barsuccess"></div>
                                 </div>
                                 <span style="font-size: 11px;font-style: italic;">Completed</span>
                               <div> 
@@ -312,43 +324,78 @@
           ]
         });
 
-        // This function is used if you want to create a dummy bord element in UI
-        // var toDoButton = document.getElementById("addToDo");
-        // toDoButton.addEventListener("click", function () {
 
+function defprogress() {
 
-        //   KanbanTest.addElement("_todo", {
-        //     title: `<div class="course">
-        //                     <div class="course-preview item_handle drag_handler info"></div>
-        //                     <div class="course-info">
-        //                       <div class="fontsize">Case ID: INC2332
-        //                         <div style="float:right;">
-        //                         <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
-        //                       </div>  
-        //                       </div>
-        //                       <div class="header">Summary</div>
-        //                       <div class="col-10 sumcontent">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>
-                              
-        //                         <div class="progress">
-        //                           <div class="progress-bar" style="width:20%; background-color:#2a265f;"></div>
-        //                         </div>
-        //                         <span style="font-size: 11px;font-style: italic;">New</span>
-        //                       <div> 
-        //                         <button class="btn1" onClick="CreateTicket123(this)">View</button>
-        //                       </div>
-        //                       </div>
-        //                   </div>`
-        //   });
-        // });
+for (let index = 0; index < data.length; index++) {
+  const element = data;
+
+  const value = element[index][priority];
+  const statusvalue = element[index][Status];
+  console.log("The status value is " + statusvalue);
+
+if(statusvalue == "14")
+{
+  KanbanTest.addElement("_working", {
+    title: `<div class="course">
+              <div class="course-preview item_handle drag_handler progress1"></div>
+                  <div class="course-info">
+                    <div class="fontsize">Case ID : `+ element[index][ID] + `
+                      <div>
+                      <img src="https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861" class="main-profile-img" />
+                    </div>  
+                    </div>
+                    <div class="header">Summary</div>
+                    <div class="col-10 sumcontent"> ` + element[index][summary] + `   </div>
+                    
+                      <div class="progress">
+                        <div class="progress-barprogress"></div>
+                      </div>
+                      <span class="statusstyleprogress">In Progress</span>
+                    <div> 
+                      <div class="critical priority">
+                        <i class="fab fa-gripfire"></i>
+                          Critical
+                      </div>
+                      <div>
+                        <button class="btn1" id=ViewButton ng-click="viewbuttonscope()">View</button>
+                        
+                      </div>
+
+                    </div>
+                  </div>
+            </div>`
+  });
+
+}
+
+   if (value != "Critical") {
+    const elementArray = document.getElementsByClassName('priority');
+    var p = elementArray[elementArray.length - 1];
+    p.classList.add("ng-hide");
+  }
 
   
+  // var ViewButtonclk = document.getElementById("ViewButton");
+  //  ViewButtonclk.onclick = function() {ViewButton()};
+
+  //  var CreateCase = document.getElementById("CreateCase");
+  //  CreateCase.onclick = function() {CreateTicket()};
+
+
+}
+}
+
+
 
         function def() {
 
           for (let index = 0; index < data.length; index++) {
             const element = data;
- 
             const value = element[index][priority];
+            const statusvalue = element[index][Status];
+            if(statusvalue == "0")
+ {
           
             KanbanTest.addElement("_todo", {
               title: `<div class="course">
@@ -363,7 +410,7 @@
                               <div class="col-10 sumcontent"> ` + element[index][summary] + `   </div>
                               
                                 <div class="progress">
-                                  <div class="progress-bar" style="width:20%; background-color:#2a265f"></div>
+                                  <div class="progress-barnew"></div>
                                 </div>
                                 <span style="font-size: 11px;font-style: italic;">New</span>
                               <div> 
@@ -382,6 +429,13 @@
             });
 
 
+             if (value != "Critical") {
+              const elementArray = document.getElementsByClassName('priority');
+              var p = elementArray[elementArray.length - 1];
+              p.classList.add("ng-hide");
+            }
+
+          }          
             var ViewButtonclk = document.getElementById("ViewButton");
              ViewButtonclk.onclick = function() {ViewButton()};
 
@@ -389,21 +443,9 @@
              CreateCase.onclick = function() {CreateTicket()};
 
 
-
-             if (value != "Critical") {
-              const elementArray = document.getElementsByClassName('priority');
-              var p = elementArray[elementArray.length - 1];
-              p.classList.add("ng-hide");
-            }
-
-
           }
         }
 
-        // var searchtest = document.getElementById("testcase").onclick=function()
-        // {
-        //   console.log("onclick testcase called")
-        // }
 
         var search = document.getElementById("searchCase");
         search.onclick = function()

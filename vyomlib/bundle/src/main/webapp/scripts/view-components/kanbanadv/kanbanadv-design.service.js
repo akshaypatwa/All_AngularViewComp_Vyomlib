@@ -50,32 +50,38 @@
                                 label: 'summary',
                                 type: 'rx-inspector-expression-node-field',
                                 group: 'general',
-                                index: 2
+                                index: 3
                             },
                             priority: {
                                 label: 'priority',
                                 type: 'rx-inspector-expression-node-field',
                                 group: 'general',
-                                index: 2
+                                index: 4
                             },
                             dropcardworking_GUID: {
                                 label: 'dropcardworking_GUID',
                                 type: 'rx-inspector-expression-node-field',
                                 group: 'general',
-                                index: 2
+                                index: 5
                             },
                             ViewGuid: {
                                 label: 'ViewGuid',
                                 type: 'rx-inspector-expression-node-field',
                                 group: 'general',
-                                index: 2
+                                index: 6
                             },
                             CreateTicket: {
                                 label: 'CreateTicket',
                                 type: 'rx-inspector-expression-node-field',
                                 group: 'general',
-                                index: 2
-                            }
+                                index: 7
+                            },
+                            Status: {
+                                label: 'Status',
+                                type: 'rx-inspector-expression-node-field',
+                                group: 'general',
+                                index: 8
+                            },
                         }
                     },
                     groups: {

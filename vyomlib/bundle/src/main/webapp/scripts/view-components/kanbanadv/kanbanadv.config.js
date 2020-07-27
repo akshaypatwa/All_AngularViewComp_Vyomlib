@@ -35,6 +35,13 @@
 
           },
           {
+            name: 'Status',
+            isConfig: true, //input param
+            isRequired: false,
+            type: 'string'
+
+          },
+          {
             name: 'priority',
             type: 'string',
             isConfig: true,     // Input parameter

@@ -1081,6 +1081,8 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "            if (parentcardid == \"_working\") {\r" +
     "\n" +
+    "\r" +
+    "\n" +
     "             window.dropcardworking();\r" +
     "\n" +
     "               }\r" +
@@ -1091,6 +1093,8 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('.progress1').addClass('info').removeClass(\"progress1\");\r" +
     "\n" +
+    "              $(el).find('.progress-barprogress').addClass('progress-barnew').removeClass('progress-barprogress')\r" +
+    "\n" +
     "            }\r" +
     "\n" +
     "            else if (parentcardid == \"_working\") {\r" +
@@ -1099,11 +1103,31 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('.success').addClass('progress1').removeClass(\"success\");\r" +
     "\n" +
+    "              \r" +
+    "\n" +
+    "              \r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "              $(el).find('.progress-barnew').addClass('progress-barprogress').removeClass('progress-barnew');\r" +
+    "\n" +
+    "              $(el).find('.progress-barsuccess').addClass('progress-barprogress').removeClass('progress-barsuccess');\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "             \r" +
+    "\n" +
+    "              \r" +
+    "\n" +
     "            }\r" +
     "\n" +
     "            else if (parentcardid == \"_done\") {\r" +
     "\n" +
     "              $(el).find('.progress1').addClass('success').removeClass(\"progress1\");\r" +
+    "\n" +
+    "              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress')\r" +
+    "\n" +
+    "              \r" +
     "\n" +
     "            }\r" +
     "\n" +
@@ -1155,119 +1179,119 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              item: [\r" +
     "\n" +
-    "                {\r" +
+    "            //     {\r" +
     "\n" +
-    "                  title: `<div class=\"course\">\r" +
+    "            //       title: `<div class=\"course\">\r" +
     "\n" +
-    "                            <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "            //                 <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
     "\n" +
-    "                            <div class=\"course-info\">\r" +
+    "            //                 <div class=\"course-info\">\r" +
     "\n" +
-    "                              <div class=\"fontsize\">Case ID: INC2332\r" +
+    "            //                   <div class=\"fontsize\">Case ID: INC2332\r" +
     "\n" +
-    "                              <div>\r" +
+    "            //                   <div>\r" +
     "\n" +
-    "                                    <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "            //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                              <div class=\"header\">Summary</div>\r" +
+    "            //                   <div class=\"header\">Summary</div>\r" +
     "\n" +
-    "                              <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "            //                   <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
     "\n" +
     "                              \r" +
     "\n" +
-    "                                <div class=\"progress\">\r" +
+    "            //                     <div class=\"progress\">\r" +
     "\n" +
-    "                                  <div class=\"progress-bar\" style=\"width:70%\"></div>\r" +
+    "            //                       <div class=\"progress-bar\" style=\"width:70%\"></div>\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                                <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
+    "            //                     <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
     "\n" +
-    "                              <div> \r" +
+    "            //                   <div> \r" +
     "\n" +
-    "                                <div class=\"critical\">\r" +
+    "            //                     <div class=\"critical\">\r" +
     "\n" +
-    "                                  <i class=\"fab fa-gripfire\"></i>\r" +
+    "            //                       <i class=\"fab fa-gripfire\"></i>\r" +
     "\n" +
-    "                                   Critical\r" +
+    "            //                        Critical\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                                <div>\r" +
+    "            //                     <div>\r" +
     "\n" +
-    "                                   <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
+    "            //                        <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                          </div>`\r" +
+    "            //               </div>`\r" +
     "\n" +
-    "                },\r" +
+    "            //     },\r" +
     "\n" +
     "\r" +
     "\n" +
-    "                {\r" +
+    "            //     {\r" +
     "\n" +
-    "                  title: `<div class=\"course\">\r" +
+    "            //       title: `<div class=\"course\">\r" +
     "\n" +
-    "                            <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "            //                 <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
     "\n" +
-    "                            <div class=\"course-info\">\r" +
+    "            //                 <div class=\"course-info\">\r" +
     "\n" +
-    "                              <div class=\"fontsize\">Case ID: INC2332\r" +
+    "            //                   <div class=\"fontsize\">Case ID: INC2332\r" +
     "\n" +
-    "                                <div>\r" +
+    "            //                     <div>\r" +
     "\n" +
-    "                                    <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "            //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
     "\n" +
-    "                              </div>  \r" +
+    "            //                   </div>  \r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                              <div class=\"header\">Summary</div>\r" +
+    "            //                   <div class=\"header\">Summary</div>\r" +
     "\n" +
-    "                              <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "            //                   <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
     "\n" +
     "                             \r" +
     "\n" +
-    "                                <div class=\"progress\">\r" +
+    "            //                     <div class=\"progress\">\r" +
     "\n" +
-    "                                  <div class=\"progress-bar\" style=\"width:70%; \"></div>\r" +
+    "            //                       <div class=\"progress-bar\" style=\"width:70%; \"></div>\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                                <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
+    "            //                     <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
     "\n" +
-    "                              <div> \r" +
+    "            //                   <div> \r" +
     "\n" +
-    "                                <div class=\"critical\">\r" +
+    "            //                     <div class=\"critical\">\r" +
     "\n" +
-    "                                  <i class=\"fab fa-gripfire\"></i>\r" +
+    "            //                       <i class=\"fab fa-gripfire\"></i>\r" +
     "\n" +
-    "                                  Critical\r" +
+    "            //                       Critical\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                                <div>\r" +
+    "            //                     <div>\r" +
     "\n" +
-    "                                  <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
+    "            //                       <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
     "\n" +
-    "                                </div>\r" +
+    "            //                     </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                              </div>\r" +
+    "            //                   </div>\r" +
     "\n" +
-    "                          </div>`\r" +
+    "            //               </div>`\r" +
     "\n" +
-    "                }\r" +
+    "            //     }\r" +
     "\n" +
     "              ]\r" +
     "\n" +
@@ -1311,7 +1335,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                                <div class=\"progress\">\r" +
     "\n" +
-    "                                  <div class=\"progress-bar\" style=\"width:100%; background-color:green\"></div>\r" +
+    "                                  <div class=\"progress-barsuccess\"></div>\r" +
     "\n" +
     "                                </div>\r" +
     "\n" +
@@ -1341,69 +1365,131 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "        // This function is used if you want to create a dummy bord element in UI\r" +
+    "\r" +
     "\n" +
-    "        // var toDoButton = document.getElementById(\"addToDo\");\r" +
+    "function defprogress() {\r" +
     "\n" +
-    "        // toDoButton.addEventListener(\"click\", function () {\r" +
+    "\r" +
+    "\n" +
+    "for (let index = 0; index < data.length; index++) {\r" +
+    "\n" +
+    "  const element = data;\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  const value = element[index][priority];\r" +
+    "\n" +
+    "  const statusvalue = element[index][Status];\r" +
+    "\n" +
+    "  console.log(\"The status value is \" + statusvalue);\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "if(statusvalue == \"14\")\r" +
+    "\n" +
+    "{\r" +
+    "\n" +
+    "  KanbanTest.addElement(\"_working\", {\r" +
+    "\n" +
+    "    title: `<div class=\"course\">\r" +
+    "\n" +
+    "              <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "\n" +
+    "                  <div class=\"course-info\">\r" +
+    "\n" +
+    "                    <div class=\"fontsize\">Case ID : `+ element[index][ID] + `\r" +
+    "\n" +
+    "                      <div>\r" +
+    "\n" +
+    "                      <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "                    </div>  \r" +
+    "\n" +
+    "                    </div>\r" +
+    "\n" +
+    "                    <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "                    <div class=\"col-10 sumcontent\"> ` + element[index][summary] + `   </div>\r" +
+    "\n" +
+    "                    \r" +
+    "\n" +
+    "                      <div class=\"progress\">\r" +
+    "\n" +
+    "                        <div class=\"progress-barprogress\"></div>\r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "                      <span class=\"statusstyleprogress\">In Progress</span>\r" +
+    "\n" +
+    "                    <div> \r" +
+    "\n" +
+    "                      <div class=\"critical priority\">\r" +
+    "\n" +
+    "                        <i class=\"fab fa-gripfire\"></i>\r" +
+    "\n" +
+    "                          Critical\r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "                      <div>\r" +
+    "\n" +
+    "                        <button class=\"btn1\" id=ViewButton ng-click=\"viewbuttonscope()\">View</button>\r" +
+    "\n" +
+    "                        \r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "                    </div>\r" +
+    "\n" +
+    "                  </div>\r" +
+    "\n" +
+    "            </div>`\r" +
+    "\n" +
+    "  });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "}\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "   if (value != \"Critical\") {\r" +
+    "\n" +
+    "    const elementArray = document.getElementsByClassName('priority');\r" +
+    "\n" +
+    "    var p = elementArray[elementArray.length - 1];\r" +
+    "\n" +
+    "    p.classList.add(\"ng-hide\");\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  \r" +
+    "\n" +
+    "  // var ViewButtonclk = document.getElementById(\"ViewButton\");\r" +
+    "\n" +
+    "  //  ViewButtonclk.onclick = function() {ViewButton()};\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  //  var CreateCase = document.getElementById(\"CreateCase\");\r" +
+    "\n" +
+    "  //  CreateCase.onclick = function() {CreateTicket()};\r" +
     "\n" +
     "\r" +
     "\n" +
     "\r" +
     "\n" +
-    "        //   KanbanTest.addElement(\"_todo\", {\r" +
+    "}\r" +
     "\n" +
-    "        //     title: `<div class=\"course\">\r" +
-    "\n" +
-    "        //                     <div class=\"course-preview item_handle drag_handler info\"></div>\r" +
-    "\n" +
-    "        //                     <div class=\"course-info\">\r" +
-    "\n" +
-    "        //                       <div class=\"fontsize\">Case ID: INC2332\r" +
-    "\n" +
-    "        //                         <div style=\"float:right;\">\r" +
-    "\n" +
-    "        //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
-    "\n" +
-    "        //                       </div>  \r" +
-    "\n" +
-    "        //                       </div>\r" +
-    "\n" +
-    "        //                       <div class=\"header\">Summary</div>\r" +
-    "\n" +
-    "        //                       <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
-    "\n" +
-    "                              \r" +
-    "\n" +
-    "        //                         <div class=\"progress\">\r" +
-    "\n" +
-    "        //                           <div class=\"progress-bar\" style=\"width:20%; background-color:#2a265f;\"></div>\r" +
-    "\n" +
-    "        //                         </div>\r" +
-    "\n" +
-    "        //                         <span style=\"font-size: 11px;font-style: italic;\">New</span>\r" +
-    "\n" +
-    "        //                       <div> \r" +
-    "\n" +
-    "        //                         <button class=\"btn1\" onClick=\"CreateTicket123(this)\">View</button>\r" +
-    "\n" +
-    "        //                       </div>\r" +
-    "\n" +
-    "        //                       </div>\r" +
-    "\n" +
-    "        //                   </div>`\r" +
-    "\n" +
-    "        //   });\r" +
-    "\n" +
-    "        // });\r" +
+    "}\r" +
     "\n" +
     "\r" +
     "\n" +
-    "        function fun(elem) {\r" +
-    "\n" +
-    "          alert(\"View button clicked  \" + elem.id);\r" +
-    "\n" +
-    "        }\r" +
+    "\r" +
     "\n" +
     "\r" +
     "\n" +
@@ -1415,9 +1501,13 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "            const element = data;\r" +
     "\n" +
-    " \r" +
-    "\n" +
     "            const value = element[index][priority];\r" +
+    "\n" +
+    "            const statusvalue = element[index][Status];\r" +
+    "\n" +
+    "            if(statusvalue == \"0\")\r" +
+    "\n" +
+    " {\r" +
     "\n" +
     "          \r" +
     "\n" +
@@ -1447,7 +1537,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                                <div class=\"progress\">\r" +
     "\n" +
-    "                                  <div class=\"progress-bar\" style=\"width:20%; background-color:#2a265f\"></div>\r" +
+    "                                  <div class=\"progress-barnew\"></div>\r" +
     "\n" +
     "                                </div>\r" +
     "\n" +
@@ -1485,6 +1575,20 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
+    "             if (value != \"Critical\") {\r" +
+    "\n" +
+    "              const elementArray = document.getElementsByClassName('priority');\r" +
+    "\n" +
+    "              var p = elementArray[elementArray.length - 1];\r" +
+    "\n" +
+    "              p.classList.add(\"ng-hide\");\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          }          \r" +
+    "\n" +
     "            var ViewButtonclk = document.getElementById(\"ViewButton\");\r" +
     "\n" +
     "             ViewButtonclk.onclick = function() {ViewButton()};\r" +
@@ -1499,35 +1603,11 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "\r" +
-    "\n" +
-    "             if (value != \"Critical\") {\r" +
-    "\n" +
-    "              const elementArray = document.getElementsByClassName('priority');\r" +
-    "\n" +
-    "              var p = elementArray[elementArray.length - 1];\r" +
-    "\n" +
-    "              p.classList.add(\"ng-hide\");\r" +
-    "\n" +
-    "            }\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "\r" +
-    "\n" +
     "          }\r" +
     "\n" +
     "        }\r" +
     "\n" +
     "\r" +
-    "\n" +
-    "        // var searchtest = document.getElementById(\"testcase\").onclick=function()\r" +
-    "\n" +
-    "        // {\r" +
-    "\n" +
-    "        //   console.log(\"onclick testcase called\")\r" +
-    "\n" +
-    "        // }\r" +
     "\n" +
     "\r" +
     "\n" +

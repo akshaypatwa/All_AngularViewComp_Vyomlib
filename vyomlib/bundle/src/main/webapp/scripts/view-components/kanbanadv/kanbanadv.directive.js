@@ -13,7 +13,7 @@
                 },
 
                 link: function ($scope) {
-                    var _config, ID, summary, priority;
+                    var _config, ID, summary, priority, Status;
 
                     function init() {
                         _config = $scope.rxConfiguration.propertiesByName;
@@ -23,6 +23,7 @@
                         $scope.cfg.ID = _config.ID;
                         $scope.cfg.summary = _config.summary;
                         $scope.cfg.priority = _config.priority;
+                        $scope.cfg.Status = _config.Status;
                         
 
                         $scope.myData = [];
@@ -37,6 +38,7 @@
                         window.ID = $scope.cfg.ID;
                         window.summary = $scope.cfg.summary;
                         window.priority = $scope.cfg.priority;
+                        window.Status = $scope.cfg.Status;
 
                     }
 
@@ -52,14 +54,13 @@
                                 window.data = allRecords.data;
 
                                 // console.log("getdata" + $scope.myData);
-                                console.log(window.data);
+                                // console.log(window.data);
                                 window.def();
+                                window.defprogress();
                             }
 
                         );
 
-                        // load(window.data);
-                        // window.def();
                     }
 
                     $scope.logId = function () {
