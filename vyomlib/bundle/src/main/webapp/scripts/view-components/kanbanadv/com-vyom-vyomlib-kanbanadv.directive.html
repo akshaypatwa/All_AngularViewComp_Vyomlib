@@ -189,11 +189,15 @@
             if (parentcardid == "_todo") {
               $(el).find('.progress1').addClass('info').removeClass("progress1");
               $(el).find('.progress-barprogress').addClass('progress-barnew').removeClass('progress-barprogress')
+              $(el).find('span').empty().text("New");
             }
+
             else if (parentcardid == "_working") {
               $(el).find('.info').addClass('progress1').removeClass("info");
               $(el).find('.success').addClass('progress1').removeClass("success");
+              $(el).find('span').empty().text("In Progress");
               
+                         
               
 
               $(el).find('.progress-barnew').addClass('progress-barprogress').removeClass('progress-barnew');
@@ -204,7 +208,8 @@
             }
             else if (parentcardid == "_done") {
               $(el).find('.progress1').addClass('success').removeClass("progress1");
-              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress')
+              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress');
+              $(el).find('span').empty().text("Completed");
               
             }
           },
@@ -367,14 +372,14 @@ if(statusvalue == "14")
             </div>`
   });
 
-}
+
 
    if (value != "Critical") {
     const elementArray = document.getElementsByClassName('priority');
     var p = elementArray[elementArray.length - 1];
     p.classList.add("ng-hide");
   }
-
+}
   
   // var ViewButtonclk = document.getElementById("ViewButton");
   //  ViewButtonclk.onclick = function() {ViewButton()};
@@ -385,8 +390,6 @@ if(statusvalue == "14")
 
 }
 }
-
-
 
         function def() {
 

@@ -1095,7 +1095,11 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('.progress-barprogress').addClass('progress-barnew').removeClass('progress-barprogress')\r" +
     "\n" +
+    "              $(el).find('span').empty().text(\"New\");\r" +
+    "\n" +
     "            }\r" +
+    "\n" +
+    "\r" +
     "\n" +
     "            else if (parentcardid == \"_working\") {\r" +
     "\n" +
@@ -1103,7 +1107,11 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('.success').addClass('progress1').removeClass(\"success\");\r" +
     "\n" +
+    "              $(el).find('span').empty().text(\"In Progress\");\r" +
+    "\n" +
     "              \r" +
+    "\n" +
+    "                         \r" +
     "\n" +
     "              \r" +
     "\n" +
@@ -1125,7 +1133,9 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('.progress1').addClass('success').removeClass(\"progress1\");\r" +
     "\n" +
-    "              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress')\r" +
+    "              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress');\r" +
+    "\n" +
+    "              $(el).find('span').empty().text(\"Completed\");\r" +
     "\n" +
     "              \r" +
     "\n" +
@@ -1451,7 +1461,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "\r" +
     "\n" +
-    "}\r" +
+    "\r" +
     "\n" +
     "\r" +
     "\n" +
@@ -1465,7 +1475,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "  }\r" +
     "\n" +
-    "\r" +
+    "}\r" +
     "\n" +
     "  \r" +
     "\n" +
@@ -1486,10 +1496,6 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "}\r" +
     "\n" +
     "}\r" +
-    "\n" +
-    "\r" +
-    "\n" +
-    "\r" +
     "\n" +
     "\r" +
     "\n" +
