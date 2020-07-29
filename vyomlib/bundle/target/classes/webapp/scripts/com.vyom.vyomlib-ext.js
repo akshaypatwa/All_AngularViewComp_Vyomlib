@@ -13,6 +13,22 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', function($templateCache) {
   'use strict';
 
+  $templateCache.put('scripts/view-components/chatbot/com-vyom-vyomlib-chatbot-design.directive.html',
+    "<h1>Chatbot</h1>"
+  );
+
+
+  $templateCache.put('scripts/view-components/chatbot/com-vyom-vyomlib-chatbot.directive.html',
+    "<!DOCTYPE html><html><head><meta charset=\"ISO-8859-1\"><title>Vyom Chatbot</title></head><body><!-- <script id=\"rx-view-loader-script\" src=\"view-loader.js\"></script> --><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script><!-- <script id=\"rx-view-loader-script\" src=\"https://vyom-platform.trybmc.com/innovationsuite/view-loader.js\"></script> --> <button class=\"rx-view-loader-button\" data-bot-id=\"IDGADG1AANVNNAPS90V8PRLVOBB9GO\"></button><!--  <button class=\"rx-view-loader-button\" data-rsso-server=\"https://vyom-rsso2.trybmc.com\"></button>\r" +
+    "\n" +
+    " --><script type=\"text/javascript\">rxViewLoader.onRequestJwt(function () {\r" +
+    "\n" +
+    "             // return JWT token\r" +
+    "\n" +
+    "         });</script></body></html>"
+  );
+
+
   $templateCache.put('scripts/view-components/custom-blog/com-vyom-vyomlib-custom-blog-design.directive.html',
     "<span class=\"d-icon-book_o\" style=\"font-size: 100px;text-align: center\"></span>"
   );
@@ -587,7 +603,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "        background: #fb7d44;\r" +
     "\n" +
-    "      }</style><body><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Menubar Start ------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Menubar End ------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Sidebar Start ------------------------------------------------- --><div class=\"wrapper d-flex align-items-stretch\"><nav id=\"sidebar\" class=\"active\"><div class=\"custom-menu\"><button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-primary\"><i class=\"fa fa-bars\"></i> <span class=\"sr-only\">Toggle Menu</span></button></div><div class=\"p-4\"><h1><a href=\"index.html\" class=\"logo\">Flash</a></h1><ul class=\"list-unstyled components mb-5\"><li class=\"active\"><a href=\"#\"><span class=\"fa fa-home mr-3\"></span> Home</a></li><li><a href=\"#\"><span class=\"fa fa-user mr-3\"></span> About</a></li><li><a href=\"#\"><span class=\"fa fa-briefcase mr-3\"></span> Portfolio</a></li><!-- <li>\r" +
+    "      }</style><body><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Menubar Start ------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Menubar End ------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------Sidebar Start ------------------------------------------------- --><div class=\"wrapper d-flex align-items-stretch\"><nav id=\"sidebar\" class=\"active\"><div class=\"custom-menu\"><button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-primary\"><i class=\"fa fa-bars\"></i> <span class=\"sr-only\">Toggle Menu</span></button></div><div class=\"p-4\"><h1><a href=\"index.html\" class=\"logo\">Flash</a></h1><ul class=\"list-unstyled components mb-5\"><li class=\"active\"><a href=\"#\"><span class=\"fa fa-home mr-3\"></span> Cases</a></li><li><a href=\"#\"><span class=\"fa fa-user mr-3\"></span> About</a></li><li><a href=\"#\"><span class=\"fa fa-briefcase mr-3\"></span> Portfolio</a></li><!-- <li>\r" +
     "\n" +
     "              <a href=\"#\"><span class=\"fa fa-sticky-note mr-3\"></span> Blog</a>\r" +
     "\n" +
@@ -855,6 +871,836 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
   );
 
 
+  $templateCache.put('scripts/view-components/kanbanadv/com-vyom-vyomlib-kanbanadv-design.directive.html',
+    "<img src=\"/com.vyom.vyomlib/resources/kanban1/dist/kanbanimage3.png\" width=\"1002\" height=\"420\">"
+  );
+
+
+  $templateCache.put('scripts/view-components/kanbanadv/com-vyom-vyomlib-kanbanadv.directive.html',
+    "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link href=\"https://fonts.googleapis.com/css?family=Lato\" rel=\"stylesheet\"><!-- Sidebar --><script src=\"/com.vyom.vyomlib/resources/kanban1/sidebar/js/popper.js\"></script><script src=\"/com.vyom.vyomlib/resources/kanban1/dist/rxloader.js\"></script><!-- <script src=\"/com.vyom.vyomlib.new/resources/kanban1/sidebar/js/bootstrap.min.js\"></script> --><script src=\"/com.vyom.vyomlib/resources/kanban1/sidebar/js/main.js\"></script><link href=\"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900\" rel=\"stylesheet\"><link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\"><title>Kanban</title><!-- <link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/kanban1/dist/criticalicon.css\"> --><script src=\"https://kit.fontawesome.com/a076d05399.js\"></script><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/kanban1/dist/card_layout5.css\"><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/kanban1/dist/jkanban.css\"><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/kanban1/dist/jkanban_form.css\"><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/kanban1/dist/jkanban_material_popup.css\"><script src=\"/com.vyom.vyomlib/resources/kanban1/dist/jkanban1.js\"></script></head><style>body {\r" +
+    "\n" +
+    "    font-family: \"Lato\";\r" +
+    "\n" +
+    "    margin: 0;\r" +
+    "\n" +
+    "    padding: 0;\r" +
+    "\n" +
+    "    overflow: overlay;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .modal-content {\r" +
+    "\n" +
+    "  \r" +
+    "\n" +
+    "    width: 100%;\r" +
+    "\n" +
+    "}\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .header {\r" +
+    "\n" +
+    "    font-size: 15px;\r" +
+    "\n" +
+    "    font-weight: bold;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  img {\r" +
+    "\n" +
+    "    height: 45px;\r" +
+    "\n" +
+    "    float: right;\r" +
+    "\n" +
+    "    margin-top: -10px\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .modal.fade .modal-dialog {\r" +
+    "\n" +
+    "    transition: -webkit-transform .3s ease-out;\r" +
+    "\n" +
+    "    transition: transform .3s ease-out;\r" +
+    "\n" +
+    "    transition: transform .3s ease-out, -webkit-transform .3s ease-out;\r" +
+    "\n" +
+    "    -webkit-transform: translate(0, -50px);\r" +
+    "\n" +
+    "    transform: translate(0, -50px);\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .fade:not(.show) {\r" +
+    "\n" +
+    "    opacity: 100%;\r" +
+    "\n" +
+    "    background: #0c0c0c26;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  #myKanban {\r" +
+    "\n" +
+    "    overflow-x: auto;\r" +
+    "\n" +
+    "    position: relative;\r" +
+    "\n" +
+    "    top: -12px;\r" +
+    "\n" +
+    "    left: -5px;\r" +
+    "\n" +
+    "    padding: 7px 0;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .critical {\r" +
+    "\n" +
+    "    color: red;\r" +
+    "\n" +
+    "    font-weight: bolder;\r" +
+    "\n" +
+    "    margin-top: 5px;\r" +
+    "\n" +
+    "    font-family: Arial;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .bkgclr {\r" +
+    "\n" +
+    "    background-color: #6d6d6d;\r" +
+    "\n" +
+    "    height: 1000px;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .success {\r" +
+    "\n" +
+    "    background: #00b961;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .info {\r" +
+    "\n" +
+    "    background: #2a265f;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .warning {\r" +
+    "\n" +
+    "    background: #f4ce46;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .progress1 {\r" +
+    "\n" +
+    "    background: #039ee8;\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  .error {\r" +
+    "\n" +
+    "    background: #fb7d44;\r" +
+    "\n" +
+    "  }</style><body><div class=\"wrapper d-flex align-items-stretch\"><nav id=\"sidebar\" class=\"\"><div class=\"custom-menu\"><button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-primary\"><i class=\"fa fa-bars\"></i> <span class=\"sr-only\">Toggle Menu</span></button></div><div class=\"p-4\"><h1><a href=\"index.html\" class=\"logo\">Business Workflows</a></h1><ul class=\"list-unstyled components mb-5\"><li class=\"active\"><a href=\"#\"><span class=\"fa fa-home mr-3\"></span> Cases</a></li><li><a href=\"#\"><span class=\"fa fa-user mr-3\"></span> About</a></li><li><a href=\"#\"><span class=\"fa fa-briefcase mr-3\"></span> Portfolio</a></li><li><a href=\"#\"><span class=\"fa fa-paper-plane mr-3\"></span> Contact</a></li></ul><div class=\"mb-5\"><h3 class=\"h6 mb-3\">Subscribe for newsletter</h3><form action=\"#\" class=\"subscribe-form\"><div class=\"form-group d-flex\"><div class=\"icon\"><span class=\"icon-paper-plane\"></span></div><input type=\"text\" class=\"form-control\" placeholder=\"Enter Email Address\"></div></form></div></div></nav><div><div id=\"myKanban\"></div><script>var KanbanTest = new jKanban({\r" +
+    "\n" +
+    "          element: \"#myKanban\",\r" +
+    "\n" +
+    "          // gutter: \"10px\",\r" +
+    "\n" +
+    "          widthBoard: \"490px\",\r" +
+    "\n" +
+    "          itemHandleOptions: {\r" +
+    "\n" +
+    "            enabled: true,\r" +
+    "\n" +
+    "          },\r" +
+    "\n" +
+    "          click: function (el) {\r" +
+    "\n" +
+    "            // console.log(\"Trigger on all items click!\");\r" +
+    "\n" +
+    "          },\r" +
+    "\n" +
+    "          // dropEl: function (el, target, source, sibling) {\r" +
+    "\n" +
+    "          //   // console.log(target.parentElement.getAttribute('data-id'));\r" +
+    "\n" +
+    "          //   // console.log(el, target, source, sibling)\r" +
+    "\n" +
+    "          //   // alert(target.parentElement.getAttribute('data-id'));\r" +
+    "\n" +
+    "          //   var parentcardid = target.parentElement.getAttribute('data-id');\r" +
+    "\n" +
+    "          //   if (parentcardid == \"_working\") {\r" +
+    "\n" +
+    "          //     window.dropcardworking();\r" +
+    "\n" +
+    "          //   }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            \r" +
+    "\n" +
+    "          // },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          dropEl: function (el, target, source, sibling) {\r" +
+    "\n" +
+    "            console.log(target.parentElement.getAttribute('data-id'));\r" +
+    "\n" +
+    "            var parentcardid = target.parentElement.getAttribute('data-id');\r" +
+    "\n" +
+    "            if (parentcardid == \"_working\") {\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "             window.dropcardworking();\r" +
+    "\n" +
+    "               }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            if (parentcardid == \"_todo\") {\r" +
+    "\n" +
+    "              $(el).find('.progress1').addClass('info').removeClass(\"progress1\");\r" +
+    "\n" +
+    "              $(el).find('.progress-barprogress').addClass('progress-barnew').removeClass('progress-barprogress')\r" +
+    "\n" +
+    "              $(el).find('span').empty().text(\"New\");\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            else if (parentcardid == \"_working\") {\r" +
+    "\n" +
+    "              $(el).find('.info').addClass('progress1').removeClass(\"info\");\r" +
+    "\n" +
+    "              $(el).find('.success').addClass('progress1').removeClass(\"success\");\r" +
+    "\n" +
+    "              $(el).find('span').empty().text(\"In Progress\");\r" +
+    "\n" +
+    "              \r" +
+    "\n" +
+    "                         \r" +
+    "\n" +
+    "              \r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "              $(el).find('.progress-barnew').addClass('progress-barprogress').removeClass('progress-barnew');\r" +
+    "\n" +
+    "              $(el).find('.progress-barsuccess').addClass('progress-barprogress').removeClass('progress-barsuccess');\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "             \r" +
+    "\n" +
+    "              \r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "            else if (parentcardid == \"_done\") {\r" +
+    "\n" +
+    "              $(el).find('.progress1').addClass('success').removeClass(\"progress1\");\r" +
+    "\n" +
+    "              $(el).find('.progress-barprogress').addClass('progress-barsuccess').removeClass('progress-barprogress');\r" +
+    "\n" +
+    "              $(el).find('span').empty().text(\"Completed\");\r" +
+    "\n" +
+    "              \r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "          },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          addItemButton: true,\r" +
+    "\n" +
+    "          boards: [\r" +
+    "\n" +
+    "            {\r" +
+    "\n" +
+    "              id: \"_todo\",\r" +
+    "\n" +
+    "              title: \"New Tickets\",\r" +
+    "\n" +
+    "              class: \"info,good\",\r" +
+    "\n" +
+    "              dragTo: [\"_working\"],\r" +
+    "\n" +
+    "              item: [\r" +
+    "\n" +
+    "                // {\r" +
+    "\n" +
+    "                //   title: '<div class=\"body1\"><div class=\"courses-container\"><div class=\"course\"><div class=\"course-preview item_handle drag_handler\"><div class=\"fontsize\">Ticket</div><div class=\"fontsize\">INC2321</div></div><div class=\"course-info\"><div class=\"progress-container\"><div class=\"new\"></div><span class=\"progress-text\">New</span></div><h6>Summary</h6><div id=\"demo1\" class=\"sumcontent\">Database Issue</h6><button class=\"btn1\" ng-click=\"ViewButton()\">View</button></div></div></div></div>'\r" +
+    "\n" +
+    "                // },\r" +
+    "\n" +
+    "              ]\r" +
+    "\n" +
+    "            },\r" +
+    "\n" +
+    "            {\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "              id: \"_working\",\r" +
+    "\n" +
+    "              title: \"In Progress\",\r" +
+    "\n" +
+    "              class: \"progress1\",\r" +
+    "\n" +
+    "              item: [\r" +
+    "\n" +
+    "            //     {\r" +
+    "\n" +
+    "            //       title: `<div class=\"course\">\r" +
+    "\n" +
+    "            //                 <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "\n" +
+    "            //                 <div class=\"course-info\">\r" +
+    "\n" +
+    "            //                   <div class=\"fontsize\">Case ID: INC2332\r" +
+    "\n" +
+    "            //                   <div>\r" +
+    "\n" +
+    "            //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //                   <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "            //                   <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "\n" +
+    "                              \r" +
+    "\n" +
+    "            //                     <div class=\"progress\">\r" +
+    "\n" +
+    "            //                       <div class=\"progress-bar\" style=\"width:70%\"></div>\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                     <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
+    "\n" +
+    "            //                   <div> \r" +
+    "\n" +
+    "            //                     <div class=\"critical\">\r" +
+    "\n" +
+    "            //                       <i class=\"fab fa-gripfire\"></i>\r" +
+    "\n" +
+    "            //                        Critical\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                     <div>\r" +
+    "\n" +
+    "            //                        <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //               </div>`\r" +
+    "\n" +
+    "            //     },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            //     {\r" +
+    "\n" +
+    "            //       title: `<div class=\"course\">\r" +
+    "\n" +
+    "            //                 <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "\n" +
+    "            //                 <div class=\"course-info\">\r" +
+    "\n" +
+    "            //                   <div class=\"fontsize\">Case ID: INC2332\r" +
+    "\n" +
+    "            //                     <div>\r" +
+    "\n" +
+    "            //                         <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "            //                   </div>  \r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //                   <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "            //                   <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "\n" +
+    "                             \r" +
+    "\n" +
+    "            //                     <div class=\"progress\">\r" +
+    "\n" +
+    "            //                       <div class=\"progress-bar\" style=\"width:70%; \"></div>\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                     <span style=\"font-size: 11px;font-style: italic;\">In Progress</span>\r" +
+    "\n" +
+    "            //                   <div> \r" +
+    "\n" +
+    "            //                     <div class=\"critical\">\r" +
+    "\n" +
+    "            //                       <i class=\"fab fa-gripfire\"></i>\r" +
+    "\n" +
+    "            //                       Critical\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                     <div>\r" +
+    "\n" +
+    "            //                       <button class=\"btn1\" id=\"1\" onClick=\"fun(this)\">View</button>\r" +
+    "\n" +
+    "            //                     </div>\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //                   </div>\r" +
+    "\n" +
+    "            //               </div>`\r" +
+    "\n" +
+    "            //     }\r" +
+    "\n" +
+    "              ]\r" +
+    "\n" +
+    "            },\r" +
+    "\n" +
+    "            {\r" +
+    "\n" +
+    "              id: \"_done\",\r" +
+    "\n" +
+    "              title: \"Completed/Closed\",\r" +
+    "\n" +
+    "              class: \"success\",\r" +
+    "\n" +
+    "              dragTo: [\"_working\"],\r" +
+    "\n" +
+    "              item: [\r" +
+    "\n" +
+    "                {\r" +
+    "\n" +
+    "                  title: `<div class=\"course\">\r" +
+    "\n" +
+    "                            <div class=\"course-preview item_handle drag_handler success\"></div>\r" +
+    "\n" +
+    "                            <div class=\"course-info\">\r" +
+    "\n" +
+    "                              <div class=\"fontsize\">Case ID: INC2332\r" +
+    "\n" +
+    "                                <div>\r" +
+    "\n" +
+    "                                    <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "                              </div>  \r" +
+    "\n" +
+    "                              </div>\r" +
+    "\n" +
+    "                              <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "                              <div class=\"col-10 sumcontent\">AD locked Lorem ipsumLorem Ipsum is simply dummy. Lorem Ipsum has been the i</div>\r" +
+    "\n" +
+    "                              \r" +
+    "\n" +
+    "                                <div class=\"progress\">\r" +
+    "\n" +
+    "                                  <div class=\"progress-barsuccess\"></div>\r" +
+    "\n" +
+    "                                </div>\r" +
+    "\n" +
+    "                                <span style=\"font-size: 11px;font-style: italic;\">Completed</span>\r" +
+    "\n" +
+    "                              <div> \r" +
+    "\n" +
+    "                                <button class=\"btn1\" onClick=\"fun(this)\">View</button>\r" +
+    "\n" +
+    "                              </div>\r" +
+    "\n" +
+    "                              </div>\r" +
+    "\n" +
+    "                          </div>`\r" +
+    "\n" +
+    "                },\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "              ]\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "          ]\r" +
+    "\n" +
+    "        });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "function defprogress() {\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "for (let index = 0; index < data.length; index++) {\r" +
+    "\n" +
+    "  const element = data;\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  const value = element[index][priority];\r" +
+    "\n" +
+    "  const statusvalue = element[index][Status];\r" +
+    "\n" +
+    "  console.log(\"The status value is \" + statusvalue);\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "if(statusvalue == \"14\")\r" +
+    "\n" +
+    "{\r" +
+    "\n" +
+    "  KanbanTest.addElement(\"_working\", {\r" +
+    "\n" +
+    "    title: `<div class=\"course\">\r" +
+    "\n" +
+    "              <div class=\"course-preview item_handle drag_handler progress1\"></div>\r" +
+    "\n" +
+    "                  <div class=\"course-info\">\r" +
+    "\n" +
+    "                    <div class=\"fontsize\">Case ID : `+ element[index][ID] + `\r" +
+    "\n" +
+    "                      <div>\r" +
+    "\n" +
+    "                      <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "                    </div>  \r" +
+    "\n" +
+    "                    </div>\r" +
+    "\n" +
+    "                    <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "                    <div class=\"col-10 sumcontent\"> ` + element[index][summary] + `   </div>\r" +
+    "\n" +
+    "                    \r" +
+    "\n" +
+    "                      <div class=\"progress\">\r" +
+    "\n" +
+    "                        <div class=\"progress-barprogress\"></div>\r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "                      <span class=\"statusstyleprogress\">In Progress</span>\r" +
+    "\n" +
+    "                    <div> \r" +
+    "\n" +
+    "                      <div class=\"critical priority\">\r" +
+    "\n" +
+    "                        <i class=\"fab fa-gripfire\"></i>\r" +
+    "\n" +
+    "                          Critical\r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "                      <div>\r" +
+    "\n" +
+    "                        <button class=\"btn1\" id=ViewButton ng-click=\"viewbuttonscope()\">View</button>\r" +
+    "\n" +
+    "                        \r" +
+    "\n" +
+    "                      </div>\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "                    </div>\r" +
+    "\n" +
+    "                  </div>\r" +
+    "\n" +
+    "            </div>`\r" +
+    "\n" +
+    "  });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "   if (value != \"Critical\") {\r" +
+    "\n" +
+    "    const elementArray = document.getElementsByClassName('priority');\r" +
+    "\n" +
+    "    var p = elementArray[elementArray.length - 1];\r" +
+    "\n" +
+    "    p.classList.add(\"ng-hide\");\r" +
+    "\n" +
+    "  }\r" +
+    "\n" +
+    "}\r" +
+    "\n" +
+    "  \r" +
+    "\n" +
+    "  // var ViewButtonclk = document.getElementById(\"ViewButton\");\r" +
+    "\n" +
+    "  //  ViewButtonclk.onclick = function() {ViewButton()};\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "  //  var CreateCase = document.getElementById(\"CreateCase\");\r" +
+    "\n" +
+    "  //  CreateCase.onclick = function() {CreateTicket()};\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "}\r" +
+    "\n" +
+    "}\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        function def() {\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          for (let index = 0; index < data.length; index++) {\r" +
+    "\n" +
+    "            const element = data;\r" +
+    "\n" +
+    "            const value = element[index][priority];\r" +
+    "\n" +
+    "            const statusvalue = element[index][Status];\r" +
+    "\n" +
+    "            if(statusvalue == \"0\")\r" +
+    "\n" +
+    " {\r" +
+    "\n" +
+    "          \r" +
+    "\n" +
+    "            KanbanTest.addElement(\"_todo\", {\r" +
+    "\n" +
+    "              title: `<div class=\"course\">\r" +
+    "\n" +
+    "                        <div class=\"course-preview item_handle drag_handler info\"></div>\r" +
+    "\n" +
+    "                            <div class=\"course-info\">\r" +
+    "\n" +
+    "                              <div class=\"fontsize\">Case ID : `+ element[index][ID] + `\r" +
+    "\n" +
+    "                                <div>\r" +
+    "\n" +
+    "                                <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "\n" +
+    "                              </div>  \r" +
+    "\n" +
+    "                              </div>\r" +
+    "\n" +
+    "                              <div class=\"header\">Summary</div>\r" +
+    "\n" +
+    "                              <div class=\"col-10 sumcontent\"> ` + element[index][summary] + `   </div>\r" +
+    "\n" +
+    "                              \r" +
+    "\n" +
+    "                                <div class=\"progress\">\r" +
+    "\n" +
+    "                                  <div class=\"progress-barnew\"></div>\r" +
+    "\n" +
+    "                                </div>\r" +
+    "\n" +
+    "                                <span style=\"font-size: 11px;font-style: italic;\">New</span>\r" +
+    "\n" +
+    "                              <div> \r" +
+    "\n" +
+    "                                <div class=\"critical priority\">\r" +
+    "\n" +
+    "                                  <i class=\"fab fa-gripfire\"></i>\r" +
+    "\n" +
+    "                                    Critical\r" +
+    "\n" +
+    "                                </div>\r" +
+    "\n" +
+    "                                <div>\r" +
+    "\n" +
+    "                                  <button class=\"btn1\" id=ViewButton ng-click=\"viewbuttonscope()\">View</button>\r" +
+    "\n" +
+    "                                  \r" +
+    "\n" +
+    "                                </div>\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "                              </div>\r" +
+    "\n" +
+    "                            </div>\r" +
+    "\n" +
+    "                      </div>`\r" +
+    "\n" +
+    "            });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "             if (value != \"Critical\") {\r" +
+    "\n" +
+    "              const elementArray = document.getElementsByClassName('priority');\r" +
+    "\n" +
+    "              var p = elementArray[elementArray.length - 1];\r" +
+    "\n" +
+    "              p.classList.add(\"ng-hide\");\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          }          \r" +
+    "\n" +
+    "            var ViewButtonclk = document.getElementById(\"ViewButton\");\r" +
+    "\n" +
+    "             ViewButtonclk.onclick = function() {ViewButton()};\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "             var CreateCase = document.getElementById(\"CreateCase\");\r" +
+    "\n" +
+    "             CreateCase.onclick = function() {CreateTicket()};\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          }\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        var search = document.getElementById(\"searchCase\");\r" +
+    "\n" +
+    "        search.onclick = function()\r" +
+    "\n" +
+    "        {\r" +
+    "\n" +
+    "          console.log(\"innerfunction called\");\r" +
+    "\n" +
+    "          console.log(search);\r" +
+    "\n" +
+    "        console.log(\"searchbuttoncalled\");\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "        \r" +
+    "\n" +
+    "        search.addEventListener(\"click\", function () {\r" +
+    "\n" +
+    "          var input, filter, ul, li, a, i, txtValue;\r" +
+    "\n" +
+    "          input = document.getElementById(\"number\");\r" +
+    "\n" +
+    "          filter = input.value.toUpperCase();\r" +
+    "\n" +
+    "          ul = KanbanTest.getBoardElements(\"_todo\");\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "          for (i = 0; i < ul.length; i++) {\r" +
+    "\n" +
+    "            a = ul[i];\r" +
+    "\n" +
+    "            console.log(a);\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            txtValue = a.textContent || a.innerText;\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "            if (txtValue.toUpperCase().indexOf(filter) > -1) {\r" +
+    "\n" +
+    "              ul[i].style.display = \"\";\r" +
+    "\n" +
+    "            } else {\r" +
+    "\n" +
+    "              ul[i].style.display = \"none\";\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "          }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        var allEle = KanbanTest.getBoardElements(\"_todo\");\r" +
+    "\n" +
+    "        allEle.forEach(function (item, index) {\r" +
+    "\n" +
+    "          console.log(item);\r" +
+    "\n" +
+    "        });\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // var removeElement = document.getElementById(\"removeElement\");\r" +
+    "\n" +
+    "      // removeElement.addEventListener(\"click\", function () {\r" +
+    "\n" +
+    "      //   KanbanTest.removeElement(\"_test_delete\");\r" +
+    "\n" +
+    "      // });</script></div></div><!-- Chatbot Script --><script id=\"rx-view-loader-script\" src=\"https://vyom-platform.trybmc.com/innovationsuite/view-loader.js\"></script><button class=\"rx-view-loader-button\" data-bot-id=\"IDGADG1AANVNNAQJ6AV1QI839NESAV\"></button><script type=\"text/javascript\">rxViewLoader.onRequestJwt(function () {\r" +
+    "\n" +
+    "             // return JWT token\r" +
+    "\n" +
+    "			 \r" +
+    "\n" +
+    "         });</script><!-- End of Chatbot Script --></body></html>"
+  );
+
+
   $templateCache.put('scripts/view-components/landing-console/com-vyom-vyomlib-inspector-landing-console-bgcolor.directive.html',
     "<label ng-class=\"options.attrs.label.class\"><rx-tooltip tooltip=\"options.tooltip\">select checkbox to hide incident details</rx-tooltip>{{options.label}}:<select ng-model=\"HChange\" ng-options=\"x for x in names\"></select></label>"
   );
@@ -940,22 +1786,319 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
   );
 
 
-  $templateCache.put('scripts/view-components/menubar/com-vyom-vyomlib-menubar-design.directive.html',
-    "<h1>Menubar</h1>"
+  $templateCache.put('scripts/view-components/menubaradv/com-vyom-vyomlib-menubaradv-design.directive.html',
+    "<img src=\"/com.vyom.vyomlib/resources/kanban1/dist/menubarimage.png\" width=\"1002\" height=\"38\">"
   );
 
 
-  $templateCache.put('scripts/view-components/menubar/com-vyom-vyomlib-menubar.directive.html',
-    "<html><head><link href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\"><script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script><script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script><!-- <link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/menubar/menu2.css\">\" --></head><body><div class=\"container\" style=\"width: 1750px; padding-left: 0px\"><nav class=\"navbar navbar-icon-top navbar-default\" style=\"margin-bottom: 5px; border-bottom: groove\"><div class=\"container-fluid\"><!-- Brand and toggle get grouped for better mobile display --><div class=\"navbar-header\"><button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\"><span class=\"sr-only\">Toggle navigation</span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span></button> <a class=\"navbar-brand\" style=\"font-size: 33px;\n" +
-    "                color: #2a265f;\n" +
-    "                font-weight: bold\">Your Application Dashboard</a></div><!-- Collect the nav links, forms, and other content for toggling --><div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\"><ul class=\"nav navbar-nav\"><li class=\"active\"><a href=\"#\">Home <span class=\"sr-only\">(current)</span></a></li><li><a href=\"#\">Link</a></li><li class=\"dropdown\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"><i class=\"fa fa-book\"><span class=\"badge badge-warning\">1</span> </i>Dropdown <span class=\"caret\"></span></a><ul class=\"dropdown-menu\"><li><a href=\"#\">Action</a></li><li><a href=\"#\">Another action</a></li><li><a href=\"#\">Something else here</a></li><li role=\"separator\" class=\"divider\"></li><li><a href=\"#\">Separated link</a></li><li role=\"separator\" class=\"divider\"></li><li><a href=\"#\">One more separated link</a></li></ul></li><!-- <li>\n" +
-    "                        <a href=\"#\">\n" +
-    "                            <i class=\"fa fa-bell\">\n" +
-    "                                <span class=\"badge badge-primary\">50</span>\n" +
-    "                            </i>\n" +
-    "                            Test\n" +
-    "                        </a>\n" +
-    "                    <li> --><li><a href=\"#\"><i class=\"fa fa-globe\"><span class=\"badge badge-success\">110</span> </i>Test</a></li></ul><form class=\"navbar-form navbar-left\"><div class=\"form-group\"><input type=\"text\" class=\"form-control\" placeholder=\"Search\"></div><button type=\"submit\" class=\"btn btn-default\">Submit</button></form><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"#\"><i class=\"fa fa-envelope-o\"><span class=\"badge badge-danger\">11</span> </i>Chatbot</a></li><li class=\"dropdown\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"><i class=\"fa fa-user-circle-o\"></i> Account <span class=\"caret\"></span></a><ul class=\"dropdown-menu\"><li><a href=\"#\">Action</a></li><li><a href=\"#\">Another action</a></li><li><a href=\"#\">Something else here</a></li><li role=\"separator\" class=\"divider\"></li><li><a href=\"#\">Separated link</a></li></ul></li></ul></div><!-- /.navbar-collapse --></div><!-- /.container-fluid --></nav></div></body></html>"
+  $templateCache.put('scripts/view-components/menubaradv/com-vyom-vyomlib-menubaradv.directive.html',
+    "<html><head><!-- <link href=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\"> --><!-- <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js\"></script> --><!-- <link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" type=\"text/css\"\r" +
+    "\n" +
+    "        rel=\"stylesheet\" /> --><!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script> --><!-- <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script> --><script src=\"//code.jquery.com/jquery-1.11.1.min.js\"></script><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css\"><!-- <link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/menubar/menu2.css\">\" --><style>.modal {\r" +
+    "\n" +
+    "            display: none;\r" +
+    "\n" +
+    "            /* Hidden by default */\r" +
+    "\n" +
+    "            position: fixed;\r" +
+    "\n" +
+    "            /* Stay in place */\r" +
+    "\n" +
+    "            z-index: 1;\r" +
+    "\n" +
+    "            /* Sit on top */\r" +
+    "\n" +
+    "            padding-top: 100px;\r" +
+    "\n" +
+    "            /* Location of the box */\r" +
+    "\n" +
+    "            left: 0;\r" +
+    "\n" +
+    "            top: 0;\r" +
+    "\n" +
+    "            width: 100%;\r" +
+    "\n" +
+    "            /* Full width */\r" +
+    "\n" +
+    "            height: 100%;\r" +
+    "\n" +
+    "            /* Full height */\r" +
+    "\n" +
+    "            overflow: auto;\r" +
+    "\n" +
+    "            /* Enable scroll if needed */\r" +
+    "\n" +
+    "            background-color: rgb(0, 0, 0);\r" +
+    "\n" +
+    "            /* Fallback color */\r" +
+    "\n" +
+    "            background-color: rgba(0, 0, 0, 0.4);\r" +
+    "\n" +
+    "            /* Black w/ opacity */\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        /* Modal Content */\r" +
+    "\n" +
+    "        .modal-contentCase {\r" +
+    "\n" +
+    "            background-color: #fefefe;\r" +
+    "\n" +
+    "            margin: auto;\r" +
+    "\n" +
+    "            width: 35%;\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        /* The Close Button */\r" +
+    "\n" +
+    "        .close {\r" +
+    "\n" +
+    "            color: #aaaaaa;\r" +
+    "\n" +
+    "            float: right;\r" +
+    "\n" +
+    "            font-size: 28px;\r" +
+    "\n" +
+    "            font-weight: bold;\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        .close:hover,\r" +
+    "\n" +
+    "        .close:focus {\r" +
+    "\n" +
+    "            color: #000;\r" +
+    "\n" +
+    "            text-decoration: none;\r" +
+    "\n" +
+    "            cursor: pointer;\r" +
+    "\n" +
+    "        }</style></head><body><div class=\"container\" style=\"width: 1750px; padding-left: 0px\"><nav class=\"navbar navbar-icon-top navbar-default\" style=\"margin-bottom: 5px; border-bottom: groove\"><div class=\"container-fluid\"><!-- Brand and toggle get grouped for better mobile display --><div class=\"navbar-header\"><button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\"><span class=\"sr-only\">Toggle navigation</span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span> <span class=\"icon-bar\"></span></button> <a class=\"navbar-brand\" style=\"font-size: 33px;\r" +
+    "\n" +
+    "                color: #2a265f;\r" +
+    "\n" +
+    "                font-weight: bold\">My Application Dashboard</a></div><div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\"><ul class=\"nav navbar-nav\"><li class=\"active\"><a href=\"#\">All Cases <span class=\"sr-only\">(current)</span></a></li></ul><form class=\"navbar-form navbar-left\"><div class=\"form-group\"><input type=\"text\" class=\"form-control\" placeholder=\"INC Number\" id=\"number\"></div><button type=\"submit\" id=\"searchCase\" class=\"btn btn-default\">Submit</button></form><ul class=\"nav navbar-nav navbar-right\"><li><a href=\"#\"><i class=\"fa fa-fire\"><span class=\"badge badge-danger\">11</span> </i>My Activity</a></li><li><!-- <i class=\"fa fa-user-circle-o\"></i> --> <button id=\"myBtn\" class=\"btn btn-success\" style=\"margin-top: 20px\">Quick Case</button></li></ul></div><!-- /.navbar-collapse --><!-- new ticket modal --><div id=\"myModal\" class=\"modal\"><!-- Modal content --><div class=\"modal-contentCase\"><div class=\"modal-header\"><h5 class=\"modal-title\">Quick Case</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\" style=\"margin:  -3rem 0 -2rem -2rem\"><span aria-hidden=\"true\">×</span></button></div><div class=\"modal-body p-4\" id=\"result\"><div id=\"myForm1\"><div class=\"form-container\"><label><b>Requestor</b></label><input type=\"text\" id=\"searchTxt\" placeholder=\"Requestor\" name=\"email1\" required><label><b>Summary</b></label><input type=\"text\" placeholder=\"Enter Summary\" name=\"psw1\" required></div></div></div><div class=\"modal-footer\"><button class=\"btn btn-success\" id=\"CreateCase\">Create Quick Case</button></div></div></div><!-- modal end --></div><!-- /container-fluid --></nav></div><script>// $('#myModal').removeClass('modal fade in');\r" +
+    "\n" +
+    "        // Get the modal\r" +
+    "\n" +
+    "        var modal = document.getElementById(\"myModal\");\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // Get the button that opens the modal\r" +
+    "\n" +
+    "        var btn = document.getElementById(\"myBtn\");\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // Get the <span> element that closes the modal\r" +
+    "\n" +
+    "        var span = document.getElementsByClassName(\"close\")[0];\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // When the user clicks the button, open the modal \r" +
+    "\n" +
+    "        btn.onclick = function () {\r" +
+    "\n" +
+    "            modal.style.display = \"block\";\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // When the user clicks on <span> (x), close the modal\r" +
+    "\n" +
+    "        span.onclick = function () {\r" +
+    "\n" +
+    "            modal.style.display = \"none\";\r" +
+    "\n" +
+    "        }\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "        // When the user clicks anywhere outside of the modal, close it\r" +
+    "\n" +
+    "        window.onclick = function (event) {\r" +
+    "\n" +
+    "            if (event.target == modal) {\r" +
+    "\n" +
+    "                modal.style.display = \"none\";\r" +
+    "\n" +
+    "            }\r" +
+    "\n" +
+    "        }</script></body></html>"
+  );
+
+
+  $templateCache.put('scripts/view-components/mypageadv/com-vyom-vyomlib-mypageadv-design.directive.html',
+    "<h1>dragdrop</h1>"
+  );
+
+
+  $templateCache.put('scripts/view-components/mypageadv/com-vyom-vyomlib-mypageadv.directive.html',
+    "<html><head><script src=\"/com.vyom.vyomlib/resources/mypageadv/mypageadv2.js\"></script></head><body><h1>FlagstoneJS <span class=\"yellow\">4.0.0</span><span class=\"slogan\">Dynamic &#38; responsive tiling</span></h1><p class=\"quick-info\"><span class=\"yellow\">12.5 KB</span> | No dependencies | Loaded with options</p><div class=\"adjust\"><table><thead><tr><th>Property</th><th>Value</th></tr></thead><tbody><tr><td>margin:</td><td><input type=\"number\" min=\"0\" max=\"1000\" disabled=\"disabled\" id=\"adjust-margin\"></td></tr><tr><td>bedPadding:</td><td><input type=\"number\" min=\"0\" max=\"1000\" value=\"10\" id=\"adjust-bed-padding\"></td></tr><tr><td>stonesMargin:</td><td><input type=\"number\" min=\"0\" max=\"1000\" value=\"10\" id=\"adjust-stones-margin\"></td></tr><tr><td>minWidth:</td><td><input type=\"number\" min=\"0\" max=\"1000\" value=\"280\" id=\"adjust-min-width\"></td></tr><tr><td>maxColumns:</td><td><input type=\"number\" min=\"0\" max=\"1000\" value=\"5\" id=\"adjust-max-columns\"></td></tr><tr><td>dragAndDrop:</td><td><input type=\"checkbox\" checked=\"checked\" id=\"adjust-drag-and-drop\"></td></tr><tr><td>dropCallback:</td><td><textarea id=\"adjust-drop-callback\">function(dragElem, targetElem) {\r" +
+    "\n" +
+    "    return true;\r" +
+    "\n" +
+    "  }</textarea></td></tr><tr><td>callback:</td><td><textarea id=\"adjust-callback\">function(elem, index) {\r" +
+    "\n" +
+    "    if (index === 3) {\r" +
+    "\n" +
+    "      elem.classList.add('highlight');\r" +
+    "\n" +
+    "    } else {\r" +
+    "\n" +
+    "      elem.classList.remove('highlight');\r" +
+    "\n" +
+    "    }\r" +
+    "\n" +
+    "  }</textarea></td></tr></tbody><tfoot><tr><td><button class=\"apply-adjustments\">Apply</button></td><td></td></tr></tfoot></table><div class=\"toggle-widget\"><p>Toggle Adjust Widget</p><button>&#x21D5;</button></div></div><button class=\"add-card\">Inject a card</button><article style=\"visibility:hidden\"><section class=\"flagstone-drag-handle\"><h2>1</h2><button class=\"flagstone-remove\">&#215;</button><p class=\"p-animate\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p><button class=\"toggle-more show-more flagstone-resize-height\">Show More</button> <button class=\"toggle-more show-less flagstone-resize-height\">Show Less</button></section><section class=\"flagstone-drag-handle\"><h2>2</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p><img src=\"http://placebear.com/160/160\" alt=\"\" style=\"float:left;width:80px;margin:10px 10px 10px 0\"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p></section><section class=\"flagstone-drag-handle\"><h2>3</h2><button class=\"flagstone-remove\">&#215;</button> <img src=\"http://placebear.com/260/80\" alt=\"\" id=\"change-my-source\"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></section><section class=\"flagstone-drag-handle\"><h2>4</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Lorem ipsum dolor sit amet hic cupiditate sapiente placeat temporibus.</p></section><section class=\"flagstone-drag-handle\"><h2>5</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet. Hic cupiditate sapiente placeat temporibus, placeat temporibus, fugiat eos.</p></section><section class=\"flagstone-drag-handle\"><h2>6</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p></section><section class=\"flagstone-drag-handle\"><h2>7</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus. Accusamus ducimus unde amet quam omnis.</p></section><section class=\"flagstone-drag-handle\"><h2>8</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quibusdam placeat dolorum natus voluptatum reiciendis cupiditate, cum veritatis accusamus labore consectetur ab amet, sit commodi laudantium beatae molestiae iste repellendus.</p></section><section class=\"flagstone-drag-handle\"><h2>9</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet.</p></section><section class=\"flagstone-drag-handle\"><h2>10</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p></section><section class=\"flagstone-drag-handle\"><h2>11</h2><button class=\"flagstone-remove\">&#215;</button><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus.</p></section></article><!-- <article>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>1</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>2</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "    <img src=\"http://placebear.com/160/160\" alt=\"\" style=\"float:left;width:80px;margin:10px 10px 10px 0;\"/>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>3</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <img src=\"http://placebear.com/260/80\" alt=\"\" />\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>4</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Lorem ipsum dolor sit amet hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>5</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet. Hic cupiditate sapiente placeat temporibus, placeat temporibus, fugiat eos.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>6</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>7</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus. Accusamus ducimus unde amet quam omnis.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>8</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quibusdam placeat dolorum natus voluptatum reiciendis cupiditate, cum veritatis accusamus labore consectetur ab amet, sit commodi laudantium beatae molestiae iste repellendus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>9</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>10</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus unde amet quam omnis aliquid aliquam culpa, explicabo ut officia illum doloremque debitis, fugiat eos. Hic cupiditate sapiente placeat temporibus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "  <section>\r" +
+    "\n" +
+    "    <h2>11</h2>\r" +
+    "\n" +
+    "    <button class=\"flagstone-remove\">&#215;</button>\r" +
+    "\n" +
+    "    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus.</p>\r" +
+    "\n" +
+    "  </section>\r" +
+    "\n" +
+    "</article> --><div style=\"position:absolute;z-index:9999;top:0;right:0;display:block;width:100px;height:100px;border-radius:50% 0 50% 50%;padding:2px;color:#fff;box-shadow:inset 0 0 15px 0 #000;background:#333;font-family:'Georgia',sans-serif;font-size:14px;text-align:center\"><p style=\"margin-top:10px\"><span style=\"display:block\">On</span><a href=\"https://github.com/depthdev\" target=\"_blank\" style=\"display:block;color:#08f\">Github</a><span style=\"display:block\">and</span><a href=\"http://depthdev.com/\" target=\"_blank\" style=\"color:#08f\">Depth</a></p></div><script>// Download plugin from https://github.com/depthdev/flagstonejs\r" +
+    "\n" +
+    "\r" +
+    "\n" +
+    "/*\r" +
+    "\n" +
+    "  FlagstoneJS v4.0.0\r" +
+    "\n" +
+    "  (c) 2015-2018 Depth Development. http://depthdev.com\r" +
+    "\n" +
+    "  License: MIT\r" +
+    "\n" +
+    "*/\r" +
+    "\n" +
+    "!function(e,t){\"use strict\";e.flagstone=function(n,r){function a(n,r){function a(){for(var e=0,t=k.length;e<t;e++)Math.random()<q&&k.splice(e,0,!1)}function o(){L.style.visibility=\"hidden\"}function s(){L.style.visibility=\"visible\"}function i(){var t=[w],n=0,r=O.length;for(M=[];n<r;n++){if(n<w)k[n]?(k[n].style.transform=\"translate(\"+(A*n+(n?C*n+E:E))+\"px,\"+E+\"px)\",Z&&(k[n].style.height=k[n].style.width),t[n]=O[n]+E,ae(k[n],n),M.push([k[n]])):w>1&&(t[n]=A+E);else{var a=Math.min.apply(null,t),o=t.indexOf(a);k[n]?(k[n].style.transform=\"translate(\"+(A*o+(o?C*o+E:E))+\"px,\"+(a+C)+\"px)\",Z&&(k[n].style.height=k[n].style.width),t[o]+=O[n]+C,ae(k[n],n),M[o].push(k[n])):w>1&&(t[o]+=A+C)}b=(Math.max.apply(null,t)||O[0]+E)+E,L.style.height=b+\"px\"}e.setTimeout(s)}function l(t){if(k.length){y=L.offsetWidth,y<T+(E?2*E:0)&&(y=T),D=Math.floor(y/T),w=D>x?x:D,A=y/w-(C*(w-1)+2*E)/w,O=[];for(var n=0,r=k.length;n<r;n++)k[n]&&(k[n].style.width=A+\"px\",k[n].style.marginTop=\"0px\"),O.push(Z||!k[n]?A:k[n].offsetHeight);y===L.offsetWidth||t?i():l(!0),t||e.setTimeout(function(){l(!0)},W)}}function g(t){if(\"keydown\"!==t.type||13===t.keyCode||32===t.keyCode){for(var n=t.target;n&&!n.classList.contains(B);)n=n.parentElement;L.removeChild(n),e.MutationObserver||!oe&&!se||de()}}function d(t){\"keydown\"===t.type&&13!==t.keyCode&&32!==t.keyCode||e.setTimeout(l,Q)}function c(t){function n(){for(var t=0,n=M.length,r=0,a=0;t<n&&!g;t++)for(r=0,a=M[t].length;r<a;r++)g&&(i.push(M[t][r]),l.push(e.parseInt(M[t][r].style.marginTop,10)||0)),M[t][r]===o&&(g=!0)}function r(){for(var t=0,n=w,a=[];t<n;t++){var o=M[t][M[t].length-1],s=e.parseInt(o.style.transform.match(/\\d+px/)[0],10)+(e.parseInt(o.style.marginTop,10)||0)+o.offsetHeight+E;a.push(s)}var i=Math.max.apply(null,a);L.style.height=i+\"px\",V=e[($?\"request\":\"cancel\")+\"AnimationFrame\"](r)}function a(){function t(){for(var r=o.offsetHeight+s,g=r-a,d=0;d<n;d++)i[d].style.marginTop=g+l[d]+\"px\";te=e[(ne?\"request\":\"cancel\")+\"AnimationFrame\"](t)}var n=i.length,a=e.parseInt(i[0].style.transform.match(/\\d+px/)[0],10)-C+l[0];ne=!0,te=e.requestAnimationFrame(t),re=e.setTimeout(function(){ne=!1,e.cancelAnimationFrame(te)},U),$=!0,V=e.requestAnimationFrame(r),ee=e.setTimeout(function(){$=!1,e.cancelAnimationFrame(V)},U)}for(var o=t;o&&!o.classList.contains(B);)o=o.parentElement;var s=e.parseInt(o.style.transform.match(/\\d+px/)[0],10)+(e.parseInt(o.style.marginTop,10)||0),i=[],l=[],g=!1;return n(),$=!1,e.cancelAnimationFrame(V),e.clearTimeout(ee),ne=!1,e.cancelAnimationFrame(te),e.clearTimeout(re),i.length?void a():($=!0,V=e.requestAnimationFrame(r),void(ee=e.setTimeout(function(){$=!1,e.cancelAnimationFrame(V)},U)))}function m(e){\"keydown\"===e.type&&13!==e.keyCode&&32!==e.keyCode||c(e.target)}function f(){e.clearTimeout(le),le=e.setTimeout(l,Y)}function v(){e.clearTimeout(ge),ge=e.setTimeout(de)}function u(){e.removeEventListener(\"resize\",f),t.head.removeChild(t.getElementById(\"flagstone-\"+S+\"-styles\"))}function h(e){e.margin||0===e.margin?(E=e.margin,C=e.margin):(E=e.bedPadding||E,C=e.stonesMargin||C),T=e.minWidth||T,x=e.maxColumns||x,G=e.dragAndDrop===!0||e.dragAndDrop===!1?e.dragAndDrop:G,K=e.dropCallback||K,ae=e.callback||ae,de()}var S=e.flagstone.index,p=r||{},L=n?\"string\"==typeof n?t.querySelector(n):n:t.getElementsByClassName(\"flagstone\")[0],E=p.margin||0===p.margin?p.margin:p.bedPadding||0===p.bedPadding?p.bedPadding:10,y=0,b=0,T=p.minWidth||280,x=p.maxColumns||5,D=0,w=0,k=[],C=p.margin||0===p.margin?p.margin:p.stonesMargin||0===p.stonesMargin?p.stonesMargin:10,A=y/w-C*(w+1)/w,O=[],M=[],B=\"flagstone-\"+S+\"-bed__stone\",F=p.flow,z=p.direction?p.direction.toLowerCase():\"left\",I=p.assignReverseZIndexes,P=p.random,q=p.spaceFrequency||.4,N=p.space,W=p.animationDuration||0,H=p.animationDuration/1e3,R=p.animationTimingFunction||\"linear\",_=p.heightAnimationDuration||0,X=p.heightAnimationDuration/1e3,j=p.heightAnimationTimingFunction||\"linear\",Y=p.resizeDelay||0===p.resizeDelay?p.resizeDelay:250,Z=p.square,G=p.dragAndDrop,J=p.dragAndDropAutoDelay,K=p.dropCallback||function(){return!0},Q=p.eventResetDelay||0,U=p.eventResizeHeightDuration||0,V=null,$=!1,ee=null,te=null,ne=!1,re=null,ae=p.callback||function(){},oe=p.watch!==!1,se=p.watchAll,ie=p.watchImages!==!1,le=null,ge=null,de=null,ce={targetElem:null,dragStone:null,targetStone:null,targetStoneOverLeft:0,autoDropTimer:null,autoDrop:function(){ce.targetStone&&ce.targetStone.classList.contains(B)&&(ce.targetStoneOverLeft?ce.dragStone!==ce.targetStone.previousElementSibling&&(ce.targetStone.parentElement.insertBefore(ce.dragStone,ce.targetStone),ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.remove(\"flagstone-dragover\")):ce.dragStone!==ce.targetStone.nextElementSibling&&(ce.targetStone.parentElement.insertBefore(ce.dragStone,ce.targetStone.nextElementSibling),ce.targetStone.classList.remove(\"flagstone-right\"),ce.targetStone.classList.remove(\"flagstone-dragover\")),e.clearTimeout(ce.autoDropTimer),ce.autoDropTimer=e.setTimeout(ce.autoDrop,J))},clear:function(){ce.dragStone&&(ce.dragStone.classList.remove(\"flagstone-drag\"),ce.dragStone=null),ce.targetStone&&(ce.targetStoneOverLeft=0,ce.targetStone.classList.remove(\"flagstone-dragover\"),ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.remove(\"flagstone-right\"),ce.targetStone=null),L.classList.remove(\"flagstone-dragover\")},getTargetElem:function(e){for(ce.targetElem=e.target instanceof HTMLElement?e.target:e.target.parentElement;ce.targetElem&&!ce.targetElem.classList.contains(\"flagstone-drag-handle\");)ce.targetElem=ce.targetElem.parentElement;if(ce.targetElem)for(ce.dragStone=ce.targetElem;ce.dragStone&&!ce.dragStone.classList.contains(B);)ce.dragStone=ce.dragStone.parentElement},mouseDown:function(e){ce.getTargetElem(e)},dragStart:function(e){return!!ce.targetElem&&(ce.dragStone.classList.add(\"flagstone-drag\"),void(e.dataTransfer&&e.dataTransfer.setData(\"text\",this.id)))},touchStart:function(e){ce.getTargetElem(e),ce.dragStart(e)},dragEnter:function(t){t.preventDefault(),t.stopPropagation(),this!==ce.dragStone&&this!==ce.targetStone&&this!==L&&(e.clearTimeout(ce.autoDropTimer),ce.autoDropTimer=e.setTimeout(ce.autoDrop,J))},touchMove:function(e){if(!ce.dragStone)return!1;e.preventDefault(),e.stopPropagation();for(var n=t.elementFromPoint(e.touches[0].clientX,e.touches[0].clientY),r=n;r&&!r.classList.contains(B);)r=r.parentElement;r?(L.classList.remove(\"flagstone-dragover\"),ce.targetStoneOverLeft=r.getBoundingClientRect().left+r.offsetWidth/2>e.touches[0].clientX,ce.targetStone&&ce.targetStone!==r&&(ce.targetStone.classList.remove(\"flagstone-dragover\"),ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.remove(\"flagstone-right\")),ce.targetStone=r,ce.targetStone.classList.contains(\"flagstone-lock\")||(ce.targetStone.classList.add(\"flagstone-dragover\"),ce.targetStoneOverLeft?(ce.targetStone.classList.remove(\"flagstone-right\"),ce.targetStone.classList.add(\"flagstone-left\")):(ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.add(\"flagstone-right\")))):n===L&&(ce.targetStone.classList.remove(\"flagstone-dragover\"),ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.remove(\"flagstone-right\"),L.classList.add(\"flagstone-dragover\"),ce.targetStone=L)},dragOver:function(e){return!!ce.dragStone&&(e.preventDefault(),e.stopPropagation(),e.dataTransfer.dropEffect=\"move\",void(this!==ce.dragStone&&this.classList.contains(B)?(ce.targetStone=this,ce.targetStone.classList.add(\"flagstone-dragover\"),ce.targetStoneOverLeft=this.getBoundingClientRect().left+this.offsetWidth/2>e.clientX,ce.targetStoneOverLeft?(ce.targetStone.classList.remove(\"flagstone-right\"),ce.targetStone.classList.add(\"flagstone-left\")):(ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.add(\"flagstone-right\")),this.classList.remove(\"flagstone-dragover\"),ce.targetStone!==L&&L.classList.remove(\"flagstone-dragover\")):this===L&&this.classList.add(\"flagstone-dragover\")))},dragEnd:function(){ce.clear()},touchEnd:function(){ce.dragStone&&ce.targetStone&&!ce.targetStone.classList.contains(\"flagstone-lock\")&&K(ce.dropStone,ce.targetStone)&&(ce.targetStone===L?L.appendChild(ce.dragStone):ce.targetStoneOverLeft?L.insertBefore(ce.dragStone,ce.targetStone):L.insertBefore(ce.dragStone,ce.targetStone.nextElementSibling)),ce.clear()},dragLeave:function(){ce.targetStone&&(ce.targetStone.classList.remove(\"flagstone-dragover\"),ce.targetStone.classList.remove(\"flagstone-left\"),ce.targetStone.classList.remove(\"flagstone-right\"),L.classList.remove(\"flagstone-dragover\"))},drop:function(t){if(!ce.dragStone)return!1;if(t.stopPropagation(),e.clearTimeout(ce.autoDropTimer),ce.dragStone!==this&&(this.classList.contains(B)||this===L)){if(ce.targetStone=this,ce.targetStone===L){if(!K(ce.dragStone,ce.targetStone))return ce.clear(),!1;ce.targetStone.appendChild(ce.dragStone)}else if(ce.targetStoneOverLeft){if(!K(ce.dragStone,ce.targetStone))return ce.clear(),!1;ce.targetStone.parentElement.insertBefore(ce.dragStone,ce.targetStone)}else{if(!K(ce.dragStone,ce.targetStone.nextElementSibling))return ce.clear(),!1;ce.targetStone.parentElement.insertBefore(ce.dragStone,ce.targetStone.nextElementSibling)}ce.clear(),e.MutationObserver||!oe&&!se||de()}return!1}};return de=function(){k=Array.prototype.slice.call(L.children);for(var t=0,n=k.length;t<n;t++)k[t].classList.add(B),I&&(k[t].style.zIndex=n-t);if(ie)for(var r=L.getElementsByTagName(\"img\"),o=0,s=r.length;o<s;o++)r[o].naturalWidth||(r[o].removeEventListener(\"load\",l),r[o].addEventListener(\"load\",l),r[o].removeEventListener(\"error\",l),r[o].addEventListener(\"error\",l));for(t=0;t<n;t++)k[t].removeAttribute(\"draggable\"),k[t].removeEventListener(\"mousedown\",ce.mouseDown),k[t].removeEventListener(\"dragstart\",ce.dragStart),k[t].removeEventListener(\"touchstart\",ce.touchStart),k[t].removeEventListener(\"touchmove\",ce.touchMove),k[t].removeEventListener(\"dragover\",ce.dragOver),k[t].removeEventListener(\"dragleave\",ce.dragLeave),k[t].removeEventListener(\"dragend\",ce.dragEnd),k[t].removeEventListener(\"touchend\",ce.touchEnd),k[t].removeEventListener(\"drop\",ce.drop),k[t].removeEventListener(\"touchend\",ce.drop),k[t].removeEventListener(\"dragenter\",ce.dragEnter);if(L.removeEventListener(\"dragover\",ce.dragOver),L.removeEventListener(\"drop\",ce.drop),G){for(t=0;t<n;t++)k[t].classList.contains(\"flagstone-lock\")||(k[t].setAttribute(\"draggable\",\"true\"),k[t].addEventListener(\"mousedown\",ce.mouseDown),k[t].addEventListener(\"dragstart\",ce.dragStart),k[t].addEventListener(\"touchstart\",ce.touchStart),k[t].addEventListener(\"touchmove\",ce.touchMove),k[t].addEventListener(\"dragover\",ce.dragOver),k[t].addEventListener(\"dragleave\",ce.dragLeave),k[t].addEventListener(\"dragend\",ce.dragEnd),k[t].addEventListener(\"touchend\",ce.touchEnd),k[t].addEventListener(\"drop\",ce.drop),k[t].addEventListener(\"touchend\",ce.drop),J&&k[t].addEventListener(\"dragenter\",ce.dragEnter),k[t].getElementsByClassName(\"flagstone-drag-handle\").length||k[t].classList.add(\"flagstone-drag-handle\"));L.addEventListener(\"dragover\",ce.dragOver),L.addEventListener(\"drop\",ce.drop)}(P||N)&&(P&&k.sort(function(){return.5-Math.random()}),N&&a());var i=L.getElementsByClassName(\"flagstone-remove\");for(t=0,n=i.length;t<n;t++)i[t].removeEventListener(\"click\",g),i[t].addEventListener(\"click\",g),i[t].removeEventListener(\"keydown\",g),i[t].addEventListener(\"keydown\",g);for(i=L.getElementsByClassName(\"flagstone-reset\"),t=0,n=i.length;t<n;t++)i[t].removeEventListener(\"click\",d),i[t].addEventListener(\"click\",d),i[t].removeEventListener(\"keydown\",d),i[t].addEventListener(\"keydown\",d);for(i=L.getElementsByClassName(\"flagstone-resize-height\"),t=0,n=i.length;t<n;t++)i[t].removeEventListener(\"click\",m),i[t].addEventListener(\"click\",m),i[t].removeEventListener(\"keydown\",m),i[t].addEventListener(\"keydown\",m);l(),e.setTimeout(function(){l(!0)},W)},function(){if(o(),L.classList.add(\"flagstone-\"+S+\"-bed\"),!t.getElementById(\"flagstone-\"+S+\"-styles\")){var n=\".flagstone-\"+S+\"-bed{box-sizing:border-box;list-style-type:none;overflow:hidden;position:relative;min-width:\"+(T+2*E)+\"px;}\",r=\".flagstone-\"+S+\"-bed__stone{box-sizing:border-box;position:absolute;top:0px;\"+z+\":0px;margin:0;}\",a=\".flagstone-\"+S+\"-bed__stone{transition:transform \"+H+\"s \"+R+(F?\",width \"+H+\"s \"+R:\"\")+(_?\",height \"+X+\"s \"+j:\"\")+\";}\",s=n+r+a,i=t.createElement(\"style\");i.type=\"text/css\",i.id=\"flagstone-\"+S+\"-styles\",i.appendChild(t.createTextNode(s)),t.head.appendChild(i)}if(de(),e.removeEventListener(\"resize\",f),e.addEventListener(\"resize\",f),e.MutationObserver&&(oe||se)){var l=new e.MutationObserver(v);se&&ie?l.observe(L,{childList:!0,subtree:!0,attributes:!0,attributeFilter:[\"src\"]}):l.observe(L,{childList:!0,subtree:se})}}(),{adjust:h,destroy:u,resizeHeight:c,hide:o,reset:f,hardReset:de}}return e.flagstone.index++,new a(n,r)},e.flagstone.index=-1}(window,document);</script></body></html>"
   );
 
 
