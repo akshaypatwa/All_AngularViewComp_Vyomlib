@@ -85,9 +85,191 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
 
 
   $templateCache.put('scripts/view-components/dashboard1/com-vyom-vyomlib-dashboard1.directive.html',
-    "<!DOCTYPE html><html lang=\"en\" class=\"\" style=\"margin-left: 90px;margin-top: 30px\"><head><title>MyPage</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\"><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script><script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script><!-- Font Awesome --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/font-awesome.min.css\" rel=\"stylesheet\"><!-- NProgress --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/nprogress.css\" rel=\"stylesheet\"><!-- iCheck --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/green.css\" rel=\"stylesheet\"><!-- bootstrap-progressbar --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/bootstrap-progressbar-3.3.4.min.css\" rel=\"stylesheet\"><!-- JQVMap --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/jqvmap.min.css\" rel=\"stylesheet\"><!-- bootstrap-daterangepicker --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/daterangepicker.css\" rel=\"stylesheet\"><script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\"></script><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/myPage.css\"></head><body><div class=\"container\"><div class=\"row\"><div class=\"widgetTable\"><table><tr><td id=\"profileWidgetTD\"><!--								<div class=\"widget panelbox\">--><div class=\"widget panelbox\" style=\"width: 413px;margin-left: 48px\"><div class=\"profile\"><p class=\"profile-image\" style=\"text-align:center\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/icons/personicon.png\" align=\"middle\" style=\"border-radius: 50%\"></p><h3 align=\"center\" style=\"color: black\" class=\"name\">Allen Allbrook</h3><p style=\"text-align:center; font-size: 12px\" class=\"des\">Manager<br>Gurgoan, IN<br></p><hr><p></p><p style=\"text-align:center; font-size: 12px\" class=\"des\">Contact Info:<br>Direct : 2129983773 (11)<br>Cell : 8888888888<br>a.allbrook@mail.com</p></div></div></td><td><div class=\"widget panelbox\"><div class=\"financial\"><img class=\"img-responsive icons\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/icons/financial.png\" alt=\"\" title=\"Finance\"><p class=\"title\">My Financials</p><div id=\"myfinancials\"><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/payslip.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/address.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/PF.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/employeement.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/bonus1.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/quicklinks/softloan.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--							<p style=\"visibility: hidden; font-size: 8px;\">abc</p>--></div></div></div></td><td><div id=\"ER1\" class=\"panelbox ER\"><!--ER HTML--><!--									<div class=\"ER-main\">--><div class=\"ER-main\" style=\"padding-left: 8px\"><img alt=\"suggestion_icon\" class=\"img-responsive icons\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/icons/ERicon.png\"><p class=\"title\">Employee Reimbursement <a id=\"erhelp\" href=\"#\"><i class=\"fa fa-question-circle ERhelp\" title=\"Ask for Help\" aria-hidden=\"true\"></i> </a><a id=\"ERReport\" href=\"#\"><i class=\"fa fa-file-excel-o ERadmin\" title=\"ER Reports\" aria-hidden=\"true\"></i> </a><a id=\"ERadminconsole\" href=\"#\"><i class=\"fa fa fa-user-o ERadminconsole\" title=\"Admin Console\" aria-hidden=\"true\"></i></a></p><div id=\"ER\"><div class=\"ERhexbox\"><a href=\"#\"><div id=\"pendingapproval\" class=\"pendingapproval\"><br><b>12</b><p>Pending for Approval</p></div></a><a href=\"#\"><div id=\"pendingclarification\" class=\"pendingclarification\"><br><b>03</b><p>Pending Clarification</p></div></a></div><div class=\"ERname\"><div class=\"list-type3\"><ol><li id=\"ERapproval\" class=\"ERli\"><a href=\"#\">ER Approval Form</a></li><li id=\"myapproval\" class=\"ERli\"><a href=\"#\">My Approval Requests</a></li><li id=\"claimsubmission\" class=\"ERli\"><a href=\"#\">Claim Submission</a></li><li id=\"claimrequest\" class=\"ERli\"><a href=\"#\">My Claim Requests</a></li><li id=\"approvaldelegation\" class=\"ERli\"><a href=\"#\">Delegation</a></li></ol></div></div></div></div><!--ER HTML--></div></td></tr><tr><td><div class=\"panelbox\" style=\"width: 413px;margin-left: 48px\"><img alt=\"suggestion_icon\" class=\"img-responsive icons\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/icons/faq.png\"><p class=\"title\" style=\"margin-bottom: 0px\">Ask for Help</p><!--Help HTML--><div id=\"FAQ\"><a href=\"https://hr.genpact.com/hr/peopleFirst/?env=cpub\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/chatbot.jpg\" class=\"chatbotimg\"></a><br><a href=\"https://genpact-myit.onbmc.com/ux/\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/helpmate2.png\" class=\"helpmateimg\"></a><br><a href=\"https://genpactonline.sharepoint.com/sites/Ess-Beta/FAQDocuments/\"><p class=\"policieshelp\">Vyomlabs Policies</p></a><a href=\"https://genpactonline.sharepoint.com/sites/ESS_QA/SitePages/Newsfeed.aspx\"><p class=\"suggestionbox\">Suggestion Box</p></a></div></div></td><td><!-- Code for Myfinancials 2\r" +
+    "<!DOCTYPE html><html lang=\"en\"><head><title>MyPage</title><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\"><script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script><script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script><!-- Font Awesome --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/font-awesome.min.css\" rel=\"stylesheet\"><!-- NProgress --><!-- <link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/nprogress.css\" rel=\"stylesheet\"> --><!-- iCheck --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/green.css\" rel=\"stylesheet\"><!-- bootstrap-progressbar --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/bootstrap-progressbar-3.3.4.min.css\" rel=\"stylesheet\"><!-- JQVMap --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/jqvmap.min.css\" rel=\"stylesheet\"><!-- bootstrap-daterangepicker --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/daterangepicker.css\" rel=\"stylesheet\"><script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\"></script><link rel=\"stylesheet\" href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/myPage.css\"></head><body><div class=\"container\"><div class=\"row\"><div class=\"widgetTable\"><table style=\"margin-left: 4%\"><tr><td id=\"profileWidgetTD\"><div class=\"widget panelbox\"><div class=\"profile\" ng-if=\"logedInUser\"><p class=\"profile-image\" style=\"text-align:center\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/icons/personicon.png\" align=\"middle\" style=\"border-radius: 50%\"></p><h3 align=\"center\" style=\"color: black\" class=\"name\">{{logedInUser[11093002]}}</h3><p style=\"text-align:center; font-size: 12px\" class=\"des\">{{logedInUser[11093003]}}<br>{{logedInUser[11093004]}}<br></p><hr><p></p><p style=\"text-align:center; font-size: 12px\" class=\"des\">Contact Info: {{logedInUser[11093005]}}<br>{{logedInUser[8]}}</p></div></div></td><td><div class=\"widget panelbox\"><div class=\"financial\"><img class=\"img-responsive icons\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/icons/financial.png\" alt=\"\" title=\"Finance\"><p class=\"title\">My Financials</p><div id=\"myfinancials\"><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/payslip.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/address.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/PF.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/employeement.png\" alt=\"payslip\"></a></div></div><!--Payslip HTML--><!--Payslip HTML--><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/bonus1.png\" alt=\"payslip\"></a></div></div><div id=\"quicklink\"><div id=\"Payslip_widget\" class=\"quicklink\"><a data-fancybox=\"\" data-type=\"iframe\" id=\"ohrcustom\" href=\"https://soagnpc.intranet.genpact.com/widget/oraclepayroll/resources/pages/oraclePayroll.jsp?id=ND1WH%2BkWowmB7HdPPgJTow%3D%3D\"><img class=\"img-responsive\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/quicklinks/softloan.png\" alt=\"payslip\"></a></div></div></div></div></div></td><td><div class=\"panelbox\"><img alt=\"suggestion_icon\" class=\"img-responsive icons\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/icons/faq.png\"><p class=\"title\" style=\"margin-bottom: 0px\">Ask for Help</p><!--Help HTML--><div id=\"FAQ\"><a href=\"https://hr.genpact.com/hr/peopleFirst/?env=cpub\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/chatbot.jpg\" class=\"chatbotimg\"></a><br><a href=\"https://genpact-myit.onbmc.com/ux/\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/helpmate2.png\" class=\"helpmateimg\"></a><br><a href=\"https://genpactonline.sharepoint.com/sites/Ess-Beta/FAQDocuments/\"><p class=\"policieshelp\">Vyomlabs Policies</p></a><a href=\"https://genpactonline.sharepoint.com/sites/ESS_QA/SitePages/Newsfeed.aspx\"><p class=\"suggestionbox\">Suggestion Box</p></a></div></div></td><!-- <td>\r" +
     "\n" +
-    "<!-- ******************************************************************************************************************************************************* --><!-- Custom Theme Style --><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom/css/custom.min.css\" rel=\"stylesheet\"><div class=\"nav-md\"><div class=\"container body\"><div class=\"main_container\"><!-- page content --><div role=\"main\"><div class=\"row\"><div class=\"col-md-4 col-sm-4\" style=\"width: 480px;height: 324px\"><div class=\"x_panel tile fixed_height_340\" style=\"margin-bottom: 1px;height: 326px;border-left-width: 1px;margin-left: 3px\"><div class=\"x_title\"><h2 style=\"color: #0f548c\">My Trainings</h2><ul class=\"nav navbar-right panel_toolbox\"><li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a></li><li class=\"dropdown\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a><div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\"><a class=\"dropdown-item\" href=\"#\">Settings 1</a> <a class=\"dropdown-item\" href=\"#\">Settings 2</a></div></li><li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a></li></ul><div class=\"clearfix\"></div></div><div class=\"x_content\"><div class=\"dashboard-widget-content\"><ul class=\"quick-list\"><li><i class=\"fa fa-calendar-o\"></i><a href=\"#\">Angular - 33%</a></li><li><i class=\"fa fa-bars\"></i><a href=\"#\">Java - 18%</a></li><li><i class=\"fa fa-bar-chart\"></i><a href=\"#\">Python - 44%</a></li><li><i class=\"fa fa-line-chart\"></i><a href=\"#\">Helix Platform - 62%</a></li><li><i class=\"fa fa-bar-chart\"></i><a href=\"#\">On Going Trainings</a></li><li><i class=\"fa fa-line-chart\"></i><a href=\"#\">Start New</a></li><!--                      <li><i class=\"fa fa-area-chart\"></i><a href=\"#\">Logout</a>--></ul><div class=\"sidebar-widget\"><h4>Training Completion</h4><canvas width=\"150\" height=\"80\" id=\"chart_gauge_01\" class=\"\" style=\"width: 160px; height: 100px\"></canvas><div class=\"goal-wrapper\"><span id=\"gauge-text\" class=\"gauge-value pull-left\">40%</span><!--                          <span class=\"gauge-value pull-left\">%</span>--> <span id=\"goal-text\" class=\"goal-value pull-right\">6000%</span></div></div></div></div></div></div></div></div></div></div></div><div class=\"row\"><!-- jQuery --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.min.js\"></script><!-- Bootstrap --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/bootstrap.bundle.min.js\"></script><!-- FastClick --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/fastclick.js\"></script><!-- NProgress --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/nprogress.js\"></script><!-- Chart.js --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/Chart.min.js\"></script><!-- gauge.js --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/gauge.min.js\"></script><!-- bootstrap-progressbar --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/bootstrap-progressbar.min.js\"></script><!-- iCheck --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/icheck.min.js\"></script><!-- Skycons --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/skycons.js\"></script><!-- Flot --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.pie.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.time.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.stack.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.resize.js\"></script><!-- Flot plugins --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.orderBars.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.flot.spline.min.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/curvedLines.js\"></script><!-- DateJS --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/date.js\"></script><!-- JQVMap --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.vmap.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.vmap.world.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/jquery.vmap.sampledata.js\"></script><!-- bootstrap-daterangepicker --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/moment.min.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/daterangepicker.js\"></script><!-- Custom Theme Scripts --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/js/custom.min.js\"></script><!-- <td> --><td><div id=\"ER1\" class=\"panelbox ER\"><!--ER HTML--><div class=\"ER-main\"><img alt=\"suggestion_icon\" class=\"img-responsive icons custom-widet\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/png/016-web-management.png\" width=\"40px\"><p class=\"request-title\">VmWare <span class=\"glyphicon glyphicon-pencil glyphicon-icon\"></span> <a id=\"erhelp\" href=\"#\"><i class=\"fa fa-question-circle ERhelp\" title=\"Ask for Help\" aria-hidden=\"true\"></i> </a><a id=\"ERReport\" href=\"#\"><i class=\"fa fa-file-excel-o ERadmin\" title=\"ER Reports\" aria-hidden=\"true\"></i> </a><a id=\"ERadminconsole\" href=\"#\"><i class=\"fa fa fa-user-o ERadminconsole\" title=\"Admin Console\" aria-hidden=\"true\"></i></a></p><hr style=\"height:2px; color:grey\"><div id=\"ER\"><div class=\"ERhexbox\"><div class=\"requestDetails\" style=\"width: 378px\"><b class=\"b\">Details:</b><div class=\"description\" style=\"height: 192px\"><table class=\"table table-striped table-hover custom-table\"><thead><th>ID</th><th>Name</th><th>Description</th></thead><tbody><tr><td>11</td><td><a href=\"\">Windows</a></td><td>Server 2016</td></tr><tr><td>12</td><td><a href=\"\">Linux</a></td><td>CentOS 7</td></tr><tr><td>13</td><td><a href=\"\">Linux</a></td><td>Redhat 7</td></tr><tr><td>14</td><td><a href=\"\">Windows</a></td><td>Windows 2010</td></tr><tr><td>15</td><td><a href=\"\">Linux</a></td><td>Ubuntu 12</td></tr></tbody></table></div></div></div><div class=\"RequestButtons\"><div class=\"large-image\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom/images/png/016-web-management.png\" style=\"margin-left: 142px\"></div><div class=\"buttons\"><div class=\"count\" style=\"margin-left: 132px\"><div class=\"active\"><b>03</b><br>Active</div><br><div class=\"disabled\"><b>12</b><br>Disabled</div></div></div></div><br><br><br><div class=\"request-button-bottom\"><button class=\"btn btn-primary\" style=\"margin-left: 10px;margin-right: 5px\">Request</button> <button class=\"btn btn-warning\" style=\"margin-left: 5px;margin-right: 5px\">Refresh</button> <button class=\"btn btn-success\" style=\"margin-left: 5px;margin-right: 5px\">Launch</button> <button class=\"btn btn-danger\" style=\"margin-left: 5px;margin-right: 5px\">Release</button></div></div></div><!--ER HTML--></div></td><!-- </td> --></div></td></tr></table></div></div></div></body></html>"
+    "							<div id=\"ER1\" class=\"panelbox ER\">\r" +
+    "\n" +
+    "								<div class=\"ER-main\" style=\"padding-left: 8px;\">\r" +
+    "\n" +
+    "									<img alt=\"suggestion_icon\" class=\"img-responsive icons\"\r" +
+    "\n" +
+    "										src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/icons/ERicon.png\">\r" +
+    "\n" +
+    "									<p class=\"title\">Employee Reimbursement\r" +
+    "\n" +
+    "										<a id=\"erhelp\" href=\"#\">\r" +
+    "\n" +
+    "											<i class=\"fa fa-question-circle ERhelp\" title=\"Ask for Help\"\r" +
+    "\n" +
+    "												aria-hidden=\"true\"></i>\r" +
+    "\n" +
+    "										</a>\r" +
+    "\n" +
+    "										<a id=\"ERReport\" href=\"#\">\r" +
+    "\n" +
+    "											<i class=\"fa fa-file-excel-o ERadmin\" title=\"ER Reports\"\r" +
+    "\n" +
+    "												aria-hidden=\"true\"></i>\r" +
+    "\n" +
+    "										</a>\r" +
+    "\n" +
+    "										<a id=\"ERadminconsole\" href=\"#\">\r" +
+    "\n" +
+    "											<i class=\"fa fa fa-user-o ERadminconsole\" title=\"Admin Console\"\r" +
+    "\n" +
+    "												aria-hidden=\"true\"></i>\r" +
+    "\n" +
+    "										</a>\r" +
+    "\n" +
+    "									</p>\r" +
+    "\n" +
+    "									<div id=\"ER\">\r" +
+    "\n" +
+    "										<div class=\"ERhexbox\">\r" +
+    "\n" +
+    "											<a href=\"#\">\r" +
+    "\n" +
+    "												<div id=\"pendingapproval\" class=\"pendingapproval\">\r" +
+    "\n" +
+    "													<br>\r" +
+    "\n" +
+    "													<b>12</b>\r" +
+    "\n" +
+    "													<p>Pending for Approval</p>\r" +
+    "\n" +
+    "												</div>\r" +
+    "\n" +
+    "											</a>\r" +
+    "\n" +
+    "											<a href=\"#\">\r" +
+    "\n" +
+    "												<div id=\"pendingclarification\" class=\"pendingclarification\">\r" +
+    "\n" +
+    "													<br>\r" +
+    "\n" +
+    "													<b>03</b>\r" +
+    "\n" +
+    "													<p>Pending Clarification</p>\r" +
+    "\n" +
+    "												</div>\r" +
+    "\n" +
+    "											</a>\r" +
+    "\n" +
+    "										</div>\r" +
+    "\n" +
+    "										<div class=\"ERname\">\r" +
+    "\n" +
+    "											<div class=\"list-type3\">\r" +
+    "\n" +
+    "												<ol>\r" +
+    "\n" +
+    "													<li id=\"ERapproval\" class=\"ERli\">\r" +
+    "\n" +
+    "														<a href=\"#\">\r" +
+    "\n" +
+    "															ER Approval Form\r" +
+    "\n" +
+    "														</a>\r" +
+    "\n" +
+    "													</li>\r" +
+    "\n" +
+    "													<li id=\"myapproval\" class=\"ERli\">\r" +
+    "\n" +
+    "														<a href=\"#\">\r" +
+    "\n" +
+    "															My Approval Requests\r" +
+    "\n" +
+    "														</a>\r" +
+    "\n" +
+    "													</li>\r" +
+    "\n" +
+    "													<li id=\"claimsubmission\" class=\"ERli\">\r" +
+    "\n" +
+    "														<a href=\"#\">\r" +
+    "\n" +
+    "															Claim Submission\r" +
+    "\n" +
+    "														</a>\r" +
+    "\n" +
+    "													</li>\r" +
+    "\n" +
+    "													<li id=\"claimrequest\" class=\"ERli\">\r" +
+    "\n" +
+    "														<a href=\"#\">\r" +
+    "\n" +
+    "															My Claim Requests\r" +
+    "\n" +
+    "														</a>\r" +
+    "\n" +
+    "													</li>\r" +
+    "\n" +
+    "													<li id=\"approvaldelegation\" class=\"ERli\">\r" +
+    "\n" +
+    "														<a href=\"#\">\r" +
+    "\n" +
+    "															Delegation\r" +
+    "\n" +
+    "														</a>\r" +
+    "\n" +
+    "													</li>\r" +
+    "\n" +
+    "												</ol>\r" +
+    "\n" +
+    "											</div>\r" +
+    "\n" +
+    "										</div>\r" +
+    "\n" +
+    "									</div>\r" +
+    "\n" +
+    "								</div> \r" +
+    "\n" +
+    "							</div>\r" +
+    "\n" +
+    "						</td>--></tr><tr><td><link href=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/css/custom.min.css\" rel=\"stylesheet\"><div class=\"nav-md\"><div class=\"container body\"><div class=\"main_container\"><!-- page content --><div role=\"main\"><div class=\"row\"><div class=\"col-md-4 col-sm-4\" style=\"width: 480px;height: 324px\"><div class=\"x_panel tile fixed_height_340\" style=\"height: 325px\"><div class=\"x_title\"><h2 style=\"color: #0f548c\">My Trainings</h2><ul class=\"nav navbar-right panel_toolbox\"><li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a></li><li class=\"dropdown\"><a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a><div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\"><a class=\"dropdown-item\" href=\"#\">Settings 1</a> <a class=\"dropdown-item\" href=\"#\">Settings 2</a></div></li><li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a></li></ul><div class=\"clearfix\"></div></div><div class=\"x_content\"><div class=\"dashboard-widget-content\"><ul class=\"quick-list\"><li><i class=\"fa fa-calendar-o\"></i> <a href=\"#\"></a></li><li><i class=\"fa fa-bars\"></i> <a href=\"#\">Java - 18%</a></li><li><i class=\"fa fa-bar-chart\"></i> <a href=\"#\">Python - 44%</a></li><li><i class=\"fa fa-line-chart\"></i> <a href=\"#\">Helix Platform - 62%</a></li><li><i class=\"fa fa-bar-chart\"></i> <a href=\"#\">On Going Trainings</a></li><li><i class=\"fa fa-line-chart\"></i> <a href=\"#\">Start New</a></li></ul><div class=\"sidebar-widget\"><h4>Training Completion</h4><canvas width=\"150\" height=\"80\" id=\"chart_gauge_01\" class=\"\" style=\"width: 160px; height: 100px\"></canvas><div class=\"goal-wrapper\"><span id=\"gauge-text\" class=\"gauge-value pull-left\">40%</span><!--                          <span class=\"gauge-value pull-left\">%</span>--> <span id=\"goal-text\" class=\"goal-value pull-right\">6000%</span></div></div></div></div></div></div></div></div></div></div></div><div class=\"row\"><!-- jQuery --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.min.js\"></script><!-- Bootstrap --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/bootstrap.bundle.min.js\"></script><!-- FastClick --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/fastclick.js\"></script><!-- Chart.js --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/Chart.min.js\"></script><!-- gauge.js --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/gauge.min.js\"></script><!-- bootstrap-progressbar --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/bootstrap-progressbar.min.js\"></script><!-- iCheck --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/icheck.min.js\"></script><!-- Skycons --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/skycons.js\"></script><!-- Flot --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.pie.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.time.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.stack.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.resize.js\"></script><!-- Flot plugins --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.orderBars.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.flot.spline.min.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/curvedLines.js\"></script><!-- DateJS --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/date.js\"></script><!-- JQVMap --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.vmap.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.vmap.world.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/jquery.vmap.sampledata.js\"></script><!-- bootstrap-daterangepicker --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/moment.min.js\"></script><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/daterangepicker.js\"></script><!-- Custom Theme Scripts --><script src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/js/custom.min.js\"></script><!-- <td> --></div></td><td><div id=\"ER1\" class=\"panelbox ER\"><!--ER HTML--><div class=\"ER-main\"><img alt=\"suggestion_icon\" class=\"img-responsive icons custom-widet\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/png/016-web-management.png\" width=\"40px\"><p class=\"request-title\">VmWare <span class=\"glyphicon glyphicon-pencil glyphicon-icon\"></span> <a id=\"erhelp\" href=\"#\"><i class=\"fa fa-question-circle ERhelp\" title=\"Ask for Help\" aria-hidden=\"true\"></i> </a><a id=\"ERReport\" href=\"#\"><i class=\"fa fa-file-excel-o ERadmin\" title=\"ER Reports\" aria-hidden=\"true\"></i> </a><a id=\"ERadminconsole\" href=\"#\"><i class=\"fa fa fa-user-o ERadminconsole\" title=\"Admin Console\" aria-hidden=\"true\"></i></a></p><hr style=\"height:2px; color:grey\"><div id=\"ER\"><div class=\"ERhexbox\"><div class=\"requestDetails\" style=\"width: 378px\"><div class=\"description\" style=\"height: 192px\"><table id=\"Table1\" class=\"table table-striped table-hover custom-table\"><thead><th></th><th>Name</th><th>Description</th></thead><tbody ng-repeat=\"onedata in myData\"><tr><td><input type=\"checkbox\" name=\"\"></td><td>{{onedata['11093002']}}</td><td>{{onedata['8']}}</td></tr></tbody></table></div></div></div><div class=\"RequestButtons\"><div class=\"large-image\"><img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/png/016-web-management.png\" style=\"margin-left: 142px\"></div><div class=\"buttons\"><div class=\"count\" style=\"margin-left: 132px\"><div class=\"active\"><b>03</b><br>Active</div><br><div class=\"disabled\"><b>12</b><br>Disabled</div></div></div></div><br><br><br><div class=\"request-button-bottom\"><button class=\"btn btn-primary\" id=\"btnGet\" ng-click=\"clickButton()\" style=\"margin-left: 10px;margin-right: 5px\">Request</button> <button class=\"btn btn-warning\" style=\"margin-left: 5px;margin-right: 5px\">Refresh</button><!-- <button class=\"btn btn-success\"\r" +
+    "\n" +
+    "												style=\"margin-left: 5px;margin-right: 5px;\">Launch</button>\r" +
+    "\n" +
+    "											<button class=\"btn btn-danger\"\r" +
+    "\n" +
+    "												style=\"margin-left: 5px;margin-right: 5px;\">Release</button> --></div></div></div><!--ER HTML--></div></td><td><div id=\"ER1\" class=\"panelbox ER\" style=\"margin-left: 12px\"><!--ER HTML--><div class=\"ER-main\"><img alt=\"suggestion_icon\" class=\"img-responsive icons custom-widet\" src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/png/016-web-management.png\" width=\"40px\"><p class=\"request-title\">VmWare <span class=\"glyphicon glyphicon-pencil glyphicon-icon\"></span> <a id=\"erhelp\" href=\"#\"><i class=\"fa fa-question-circle ERhelp\" title=\"Ask for Help\" aria-hidden=\"true\"></i> </a><a id=\"ERReport\" href=\"#\"><i class=\"fa fa-file-excel-o ERadmin\" title=\"ER Reports\" aria-hidden=\"true\"></i> </a><a id=\"ERadminconsole\" href=\"#\"><i class=\"fa fa fa-user-o ERadminconsole\" title=\"Admin Console\" aria-hidden=\"true\"></i></a></p><hr style=\"height:2px; color:grey\"><div id=\"ER\"><div class=\"ERhexbox\"><div class=\"requestDetails\" style=\"width: 378px\"><div class=\"description\" style=\"height: 250px\"><table id=\"Table1\" class=\"table table-striped table-hover custom-table\"><thead><th>Name</th><th>Description</th></thead><tbody ng-repeat=\"data in checkedData\"><tr><td>{{data[11093002]}}</td><!-- <td>{{onedata['11093002']}}</td>\r" +
+    "\n" +
+    "																<td>{{onedata['8']}}</td> --></tr></tbody></table></div></div></div><!-- <div class=\"RequestButtons\">\r" +
+    "\n" +
+    "											<div class=\"large-image\">\r" +
+    "\n" +
+    "												<img src=\"/com.vyom.vyomlib/resources/MyPage_Vyom1/images1/png/016-web-management.png\"\r" +
+    "\n" +
+    "													style=\"margin-left: 142px\">\r" +
+    "\n" +
+    "											</div>\r" +
+    "\n" +
+    "											<div class=\"buttons\">\r" +
+    "\n" +
+    "												<div class=\"count\" style=\"margin-left: 132px;\">\r" +
+    "\n" +
+    "													<div class=\"active\">\r" +
+    "\n" +
+    "														<b>03</b><br>Active\r" +
+    "\n" +
+    "													</div>\r" +
+    "\n" +
+    "													<br>\r" +
+    "\n" +
+    "													<div class=\"disabled\">\r" +
+    "\n" +
+    "														<b>12</b><br>Disabled\r" +
+    "\n" +
+    "													</div>\r" +
+    "\n" +
+    "												</div>\r" +
+    "\n" +
+    "											</div>\r" +
+    "\n" +
+    "										</div> --><!-- <br>\r" +
+    "\n" +
+    "										<br>\r" +
+    "\n" +
+    "										<br> --><div class=\"request-button-bottom\" style=\"float: right; margin-right: 15px\"><button class=\"btn btn-primary\" id=\"btnGet\" ng-click=\"clickButton()\" style=\"margin-left: 5px\">Request</button><br><button class=\"btn btn-warning\" style=\"margin-left: 5px\">Refresh</button><br><button class=\"btn btn-success\" style=\"margin-left: 5px\">Launch</button><br><button class=\"btn btn-danger\" style=\"margin-left: 5px\">Release</button></div></div></div><!--ER HTML--></div></td><!-- </td> --></tr></table></div></div></div></body></html>"
   );
 
 
@@ -1109,6 +1291,8 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "              $(el).find('span').empty().text(\"In Progress\");\r" +
     "\n" +
+    "\r" +
+    "\n" +
     "              \r" +
     "\n" +
     "                         \r" +
@@ -1331,7 +1515,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                                <div>\r" +
     "\n" +
-    "                                    <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "                                  <img src=\"https://vyom-dsom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/d3ac4a3fdf17045a2d3eef467b44c72de7ab30f4da236942051b7f9876ac4b353987c8539236a6ac26fadd9eb2acc8b25e547635bbe7ba8f41cb5de79b1397e5/304411861\" class=\"main-profile-img\">\r" +
     "\n" +
     "                              </div>  \r" +
     "\n" +
@@ -1411,7 +1595,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                      <div>\r" +
     "\n" +
-    "                      <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "                        <img src=\"https://vyom-dsom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/d3ac4a3fdf17045a2d3eef467b44c72de7ab30f4da236942051b7f9876ac4b353987c8539236a6ac26fadd9eb2acc8b25e547635bbe7ba8f41cb5de79b1397e5/304411861\" class=\"main-profile-img\">\r" +
     "\n" +
     "                    </div>  \r" +
     "\n" +
@@ -1529,7 +1713,7 @@ angular.module('com.bmc.arsys.rx.standardlib.utils').run(['$templateCache', func
     "\n" +
     "                                <div>\r" +
     "\n" +
-    "                                <img src=\"https://vyom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/AGGCEME2HPULZAOQMFDZOPQCW7RGOW/304411861\" class=\"main-profile-img\" />\r" +
+    "                                  <img src=\"https://vyom-dsom-platform.trybmc.com/api/rx/application/record/attachment/com.bmc.arsys.rx.foundation:Person/d3ac4a3fdf17045a2d3eef467b44c72de7ab30f4da236942051b7f9876ac4b353987c8539236a6ac26fadd9eb2acc8b25e547635bbe7ba8f41cb5de79b1397e5/304411861\" class=\"main-profile-img\">\r" +
     "\n" +
     "                              </div>  \r" +
     "\n" +
